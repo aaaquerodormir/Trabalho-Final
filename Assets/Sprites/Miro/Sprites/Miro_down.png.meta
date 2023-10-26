@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ae2deaaf0385e384ebcff710a05effe1
+guid: 5fa1a501e2a31c44b85612f20b0a19bc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,6 +94,32 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -110,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Miro_down_0
+      name: gato_andando-Sheet_0
       rect:
         serializedVersion: 2
         x: 21
         y: 10
         width: 22
-        height: 44
+        height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,40 +150,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f107adbd956914e4e92af9264ae826ee
-      internalID: 956478984
+      spriteID: ccfcf60b036af774baa0e3cb925bf250
+      internalID: 1490898498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_down_1
+      name: gato_andando-Sheet_1
       rect:
         serializedVersion: 2
         x: 85
         y: 9
         width: 22
-        height: 43
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29bea548bbfe401488ed7d2712553bfa
-      internalID: -797057488
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Miro_down_2
-      rect:
-        serializedVersion: 2
-        x: 149
-        y: 9
-        width: 22
         height: 44
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -166,14 +171,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60c95b285e460804d89a8231c021d9d7
-      internalID: 1418685494
+      spriteID: 794250993888b7f42ad8319ca1c47ffe
+      internalID: -2111535048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_down_3
+      name: gato_andando-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 9
+        width: 22
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64964c24f79aab40b805d3aa3f9df92
+      internalID: -396768776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_andando-Sheet_3
       rect:
         serializedVersion: 2
         x: 213
@@ -187,17 +213,59 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6407926a26fdb134ab46f4a8cd20d7e8
-      internalID: -1364959662
+      spriteID: 0bd9773220023d648a453fbda4a0e897
+      internalID: -598844368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_down_4
+      name: gato_andando-Sheet_4
       rect:
         serializedVersion: 2
         x: 277
+        y: 9
+        width: 22
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071ec5c60f75d724c856e33258e8019c
+      internalID: -625188903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_andando-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 9
+        width: 22
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a0586506fd154469003edc9dede579
+      internalID: 1475436060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_andando-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 405
         y: 9
         width: 22
         height: 44
@@ -208,8 +276,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b017cf1746229144a9c4e9305c7704b5
-      internalID: 1744161204
+      spriteID: 854e8fe93f6758d419816cf27305f7fa
+      internalID: 914754481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_andando-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 9
+        width: 22
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a841ce1b7a638a84481c22514ce33c6c
+      internalID: -854151067
       vertices: []
       indices: 
       edges: []
@@ -225,11 +314,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Miro_down_0: 956478984
-      Miro_down_1: -797057488
-      Miro_down_2: 1418685494
-      Miro_down_3: -1364959662
-      Miro_down_4: 1744161204
+      gato_andando-Sheet_0: 1490898498
+      gato_andando-Sheet_1: -2111535048
+      gato_andando-Sheet_2: -396768776
+      gato_andando-Sheet_3: -598844368
+      gato_andando-Sheet_4: -625188903
+      gato_andando-Sheet_5: 1475436060
+      gato_andando-Sheet_6: 914754481
+      gato_andando-Sheet_7: -854151067
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

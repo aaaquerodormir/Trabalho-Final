@@ -1,22 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class Miro : MonoBehaviour
 {
+    //Defines Padrão
+
     public Animator       anim;    // animator do personagem
     public float          speed;     // Velocidade do peronsagem
     private Rigidbody2D   rb; // fisica do player
     private Vector2       movPlayer;
 
+    [SerializeField]
+    string leveltoload;
+
+
+    //Interação
+    
+
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
     }
 
+    
 
+    void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + movPlayer * speed * Time.fixedDeltaTime);
+    }
 
     void Update()
     {
@@ -27,13 +44,33 @@ public class Miro : MonoBehaviour
         anim.SetFloat("Vertical", movPlayer.y);
         anim.SetFloat("Speed", movPlayer.magnitude);
         movPlayer.Normalize();
+
+        ChangeTimeLevel();
+
+        
     }
 
-    void FixedUpdate()
+    
+
+    private void ChangeTimeLevel()
     {
-        rb.MovePosition(rb.position + movPlayer * speed * Time.fixedDeltaTime);
+        if (Input.GetButtonDown("Fire2"))
+        {
+
+            SceneManager.LoadScene(leveltoload);
+            
+        }
+        if (Input.GetButtonDown("Fire3"))
+        {
+            PlayerPrefs.DeleteAll();
+        }
     }
 
+    
 
+        
 
-}
+    }
+
+   
+
