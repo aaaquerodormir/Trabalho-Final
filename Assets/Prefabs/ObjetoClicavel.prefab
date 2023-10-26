@@ -250,4 +250,4 @@ MonoBehaviour:
   targetObject: {fileID: 8871660367555132546}
   OtherSide:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0

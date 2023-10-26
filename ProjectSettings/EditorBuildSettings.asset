@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Settings/Scenes/URP2DSceneTemplate.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Floresta.unity
+    guid: c49aeaae180eb064283a2b6b107e0133
+  - enabled: 1
+    path: Assets/Scenes/Passado/Floresta--.unity
+    guid: 1dd9acccb8a16c94bb95cf070a2666b4
   m_configObjects: {}
