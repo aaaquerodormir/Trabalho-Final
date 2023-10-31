@@ -5878,7 +5878,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3164447598327547499, guid: 493d8aa6899deed4b92766ee4e59923b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 962151353}
   m_SourcePrefab: {fileID: 100100000, guid: 493d8aa6899deed4b92766ee4e59923b, type: 3}
 --- !u!1001 &696068342
 PrefabInstance:
@@ -6286,6 +6289,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2875666444651107292, guid: 4376a0b20d1e3194c985f9a81b426f93, type: 3}
   m_PrefabInstance: {fileID: 953831748}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &962151352 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3164447598327547499, guid: 493d8aa6899deed4b92766ee4e59923b, type: 3}
+  m_PrefabInstance: {fileID: 694307157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &962151353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962151352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57bd83df20a40b43a9ce87846b65a00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidade: 1.5
+  distanciaDePerseguicao: 2
 --- !u!1001 &966110704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7571,6 +7593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Miro
       objectReference: {fileID: 0}
+    - target: {fileID: 308609920528560303, guid: d2d83ab608d92424ba321a531fb78f68, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2595248165718826880, guid: d2d83ab608d92424ba321a531fb78f68, type: 3}
       propertyPath: leveltoload
       value: Labirinto--
@@ -7601,11 +7627,11 @@ PrefabInstance:
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 4868016879534998489, guid: d2d83ab608d92424ba321a531fb78f68, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.16
+      value: 12.9
       objectReference: {fileID: 0}
     - target: {fileID: 4868016879534998489, guid: d2d83ab608d92424ba321a531fb78f68, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.19
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 4868016879534998489, guid: d2d83ab608d92424ba321a531fb78f68, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18520,7 +18546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyname: 
-  enableRemembering: 1
+  enableRemembering: 0
 --- !u!1 &2026251708
 GameObject:
   m_ObjectHideFlags: 0

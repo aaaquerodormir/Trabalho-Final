@@ -603,6 +603,9 @@ MonoBehaviour:
   mainCamera: {fileID: 202907483}
   insideMazeSize: 0.8
   outsideMazeSize: 2.5
+  Cam: {fileID: 887125655}
+  novoMaterial: {fileID: 2100000, guid: 68f8640246266954d9abf65a0b38a6a9, type: 2}
+  Original: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1001 &245963141
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1046,7 +1049,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 68f8640246266954d9abf65a0b38a6a9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6369,11 +6372,77 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4376a0b20d1e3194c985f9a81b426f93, type: 3}
+--- !u!1 &887125655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3437148501192051013, guid: 6e75ab077b8d6d84ebaac1b8723d17af, type: 3}
+  m_PrefabInstance: {fileID: 943343624}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &926084465 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2875666444651107292, guid: 4376a0b20d1e3194c985f9a81b426f93, type: 3}
   m_PrefabInstance: {fileID: 653352073}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &943343624
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2729842108401275737, guid: 6e75ab077b8d6d84ebaac1b8723d17af, type: 3}
+      propertyPath: jogador
+      value: 
+      objectReference: {fileID: 1989455733}
+    - target: {fileID: 3437148501192051013, guid: 6e75ab077b8d6d84ebaac1b8723d17af, type: 3}
+      propertyPath: m_Name
+      value: Point Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997644751101814103, guid: 6e75ab077b8d6d84ebaac1b8723d17af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.7997882
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997644751101814103, guid: 6e75ab077b8d6d84ebaac1b8723d17af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.5601466
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997644751101814103, guid: 6e75ab077b8d6d84ebaac1b8723d17af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997644751101814103, guid: 6e75ab077b8d6d84ebaac1b8723d17af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997644751101814103, guid: 6e75ab077b8d6d84ebaac1b8723d17af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997644751101814103, guid: 6e75ab077b8d6d84ebaac1b8723d17af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997644751101814103, guid: 6e75ab077b8d6d84ebaac1b8723d17af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997644751101814103, guid: 6e75ab077b8d6d84ebaac1b8723d17af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997644751101814103, guid: 6e75ab077b8d6d84ebaac1b8723d17af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5997644751101814103, guid: 6e75ab077b8d6d84ebaac1b8723d17af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6e75ab077b8d6d84ebaac1b8723d17af, type: 3}
 --- !u!4 &945089320 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2875666444651107292, guid: 4376a0b20d1e3194c985f9a81b426f93, type: 3}
@@ -7555,7 +7624,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 68f8640246266954d9abf65a0b38a6a9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20675,3 +20744,4 @@ SceneRoots:
   - {fileID: 1033700369}
   - {fileID: 348746306}
   - {fileID: 1548550131}
+  - {fileID: 943343624}
