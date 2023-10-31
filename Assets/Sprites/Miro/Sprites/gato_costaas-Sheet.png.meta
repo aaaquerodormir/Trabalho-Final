@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 41d234cd79497124bbe3b0af274c660b
+guid: 86a16f369291bb7478b274f0cb581b47
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Miro_down_0
+      name: gato_costaas-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c849b74c85481f646966348636b384f2
-      internalID: -1787331303
+      spriteID: da0d759d56a262745b4d687e03236a28
+      internalID: -1944321979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_down_1
+      name: gato_costaas-Sheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84b86754fb6043949b8604d6953b2401
-      internalID: 1431495091
+      spriteID: 9a5e4746e1aef0042ba17cb91c096596
+      internalID: -2085022248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_down_2
+      name: gato_costaas-Sheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -192,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bb903028b7ce624dbe5b3823a53611f
-      internalID: -1510716137
+      spriteID: fcdc662188d84a94ea4210df3da05bfc
+      internalID: 785890302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_down_3
+      name: gato_costaas-Sheet_3
       rect:
         serializedVersion: 2
         x: 192
@@ -213,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19dcdf99d7915114ab54e8e58afc4b57
-      internalID: -851371910
+      spriteID: 9a348f0b508a4f7429fdf92561915e50
+      internalID: -626627252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_down_4
+      name: gato_costaas-Sheet_4
       rect:
         serializedVersion: 2
         x: 256
@@ -234,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e69f51a3cf9ea6f41a5d434e8824cef8
-      internalID: -522253329
+      spriteID: badb3696389418c48a3cc6af05c2ee4c
+      internalID: -578929324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_down_5
+      name: gato_costaas-Sheet_5
       rect:
         serializedVersion: 2
         x: 320
@@ -255,50 +255,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 091e9ff170e266a4ebc2eb9d22b1d814
-      internalID: 589341939
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Miro_down_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 781dec01fba2c3142a87d217c5f10596
-      internalID: -660601886
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Miro_down_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 914b2f6b5a343df4db4eae91bd1effdd
-      internalID: -905152286
+      spriteID: 68f58664bcf59604b88420375b890eb0
+      internalID: 978608759
       vertices: []
       indices: 
       edges: []
@@ -314,14 +272,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Miro_down_0: -1787331303
-      Miro_down_1: 1431495091
-      Miro_down_2: -1510716137
-      Miro_down_3: -851371910
-      Miro_down_4: -522253329
-      Miro_down_5: 589341939
-      Miro_down_6: -660601886
-      Miro_down_7: -905152286
+      gato_costaas-Sheet_0: -1944321979
+      gato_costaas-Sheet_1: -2085022248
+      gato_costaas-Sheet_2: 785890302
+      gato_costaas-Sheet_3: -626627252
+      gato_costaas-Sheet_4: -578929324
+      gato_costaas-Sheet_5: 978608759
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

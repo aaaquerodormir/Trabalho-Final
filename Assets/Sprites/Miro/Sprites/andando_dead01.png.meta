@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 41d234cd79497124bbe3b0af274c660b
+guid: 03c221edeeaa4f048b814ca5ec56621a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Miro_down_0
+      name: andando_dead01_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 21
+        y: 10
+        width: 22
+        height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c849b74c85481f646966348636b384f2
-      internalID: -1787331303
+      spriteID: 9d74f20a0a90f3841978eacfde539b7d
+      internalID: -303911459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_down_1
+      name: andando_dead01_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
+        x: 85
+        y: 9
+        width: 22
+        height: 44
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84b86754fb6043949b8604d6953b2401
-      internalID: 1431495091
+      spriteID: 06a5eb1e104318741bb2302c36654518
+      internalID: 1394655695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_down_2
+      name: andando_dead01_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
+        x: 149
+        y: 9
+        width: 22
+        height: 45
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bb903028b7ce624dbe5b3823a53611f
-      internalID: -1510716137
+      spriteID: 6aeca994eee27034989b2e7b6b879154
+      internalID: 1607249731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_down_3
+      name: andando_dead01_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
+        x: 213
+        y: 9
+        width: 22
+        height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19dcdf99d7915114ab54e8e58afc4b57
-      internalID: -851371910
+      spriteID: e4d1e1bb740a1f34b80067372ec63959
+      internalID: 168561820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_down_4
+      name: andando_dead01_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
+        x: 277
+        y: 9
+        width: 22
+        height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e69f51a3cf9ea6f41a5d434e8824cef8
-      internalID: -522253329
+      spriteID: ec9d1027ed9be2a4ba90445550e17e29
+      internalID: 1415701570
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_down_5
+      name: andando_dead01_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
+        x: 341
+        y: 9
+        width: 22
+        height: 45
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +255,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 091e9ff170e266a4ebc2eb9d22b1d814
-      internalID: 589341939
+      spriteID: c9510f5b2effca644b05034a706ea9b3
+      internalID: 1574063901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_down_6
+      name: andando_dead01_6
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
+        x: 405
+        y: 9
+        width: 22
+        height: 44
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,20 +276,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 781dec01fba2c3142a87d217c5f10596
-      internalID: -660601886
+      spriteID: 0c4929470d6c36a44b53958df76f70f8
+      internalID: -1897540757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_down_7
+      name: andando_dead01_7
       rect:
         serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
+        x: 469
+        y: 9
+        width: 22
+        height: 43
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,8 +297,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 914b2f6b5a343df4db4eae91bd1effdd
-      internalID: -905152286
+      spriteID: 0f92cd6ebf5574241aa7a0e8f50a4a28
+      internalID: 542455497
       vertices: []
       indices: 
       edges: []
@@ -314,14 +314,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Miro_down_0: -1787331303
-      Miro_down_1: 1431495091
-      Miro_down_2: -1510716137
-      Miro_down_3: -851371910
-      Miro_down_4: -522253329
-      Miro_down_5: 589341939
-      Miro_down_6: -660601886
-      Miro_down_7: -905152286
+      andando_dead01_0: -303911459
+      andando_dead01_1: 1394655695
+      andando_dead01_2: 1607249731
+      andando_dead01_3: 168561820
+      andando_dead01_4: 1415701570
+      andando_dead01_5: 1574063901
+      andando_dead01_6: -1897540757
+      andando_dead01_7: 542455497
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

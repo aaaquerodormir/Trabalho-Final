@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a63f746c59a6fc24da0d2fc0c4386170
+guid: 920868d3a3703374f8cd1c933dfa147b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,6 +94,32 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -110,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Miro_dir_0
+      name: gato_ladoo-Sheet_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 17
-        width: 37
-        height: 33
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59fd97893a59b41418e2c3fd934b8f01
-      internalID: -1189680970
+      spriteID: b7829adf1f5dfd04eaef55b188b8f8cf
+      internalID: 1310289648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_dir_1
+      name: gato_ladoo-Sheet_1
       rect:
         serializedVersion: 2
-        x: 76
-        y: 17
-        width: 37
-        height: 33
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f04efed9b55082a4e8e2ef4cc9f9f801
-      internalID: -1046874974
+      spriteID: 721a2402ad4bb89438f70bb9cebce96c
+      internalID: 1480752058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_dir_2
+      name: gato_ladoo-Sheet_2
       rect:
         serializedVersion: 2
-        x: 140
-        y: 17
-        width: 37
-        height: 33
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f15a8777d7d771e4b9ca15069973a8cf
-      internalID: -926801488
+      spriteID: 5c9d0adc9e8d097489faf4c76e3342e1
+      internalID: -1233925770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_dir_3
+      name: gato_ladoo-Sheet_3
       rect:
         serializedVersion: 2
-        x: 204
-        y: 17
-        width: 37
-        height: 33
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a1d8179fd7ac0645ad3c7301444a67d
-      internalID: 389126047
+      spriteID: 9df8973ea4c59074ab17fbf8200210ae
+      internalID: 460976103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_dir_4
+      name: gato_ladoo-Sheet_4
       rect:
         serializedVersion: 2
-        x: 268
-        y: 17
-        width: 37
-        height: 33
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +234,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74849ce5447576246988bb45f6520787
-      internalID: 233626862
+      spriteID: bcbd4b53ea3496941b1a40247e7ef913
+      internalID: 1149169099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_ladoo-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ca4f928d9c6f24aa51f35897a72a1f
+      internalID: 1401521827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_ladoo-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0758f0e4943d06449bf618e872e4fe01
+      internalID: -1882219573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_ladoo-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb33cac73e7158a46a1f6cfee236038a
+      internalID: -1008979568
       vertices: []
       indices: 
       edges: []
@@ -225,11 +314,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Miro_dir_0: -1189680970
-      Miro_dir_1: -1046874974
-      Miro_dir_2: -926801488
-      Miro_dir_3: 389126047
-      Miro_dir_4: 233626862
+      gato_ladoo-Sheet_0: 1310289648
+      gato_ladoo-Sheet_1: 1480752058
+      gato_ladoo-Sheet_2: -1233925770
+      gato_ladoo-Sheet_3: 460976103
+      gato_ladoo-Sheet_4: 1149169099
+      gato_ladoo-Sheet_5: 1401521827
+      gato_ladoo-Sheet_6: -1882219573
+      gato_ladoo-Sheet_7: -1008979568
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
