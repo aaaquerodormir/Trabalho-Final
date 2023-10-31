@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c347d80b905ecac4c979ae58dc194aba
+guid: 14dde445c9ea3ef458fc53d8cb1149f8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Miro_idle_0
+      name: Slime idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b91e7ce08c2ea0c4ca1f67db0c67f05f
-      internalID: -1598735461
+      spriteID: 91126e8c3fef2874f8255341248b0fc7
+      internalID: -1487046209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_1
+      name: Slime idle_1
       rect:
         serializedVersion: 2
         x: 64
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21e5361bdacb2e84aac535318cb1998e
-      internalID: -411415883
+      spriteID: 3c7dfa6762fe2324eab407af94edba81
+      internalID: 1606283470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_2
+      name: Slime idle_2
       rect:
         serializedVersion: 2
         x: 128
@@ -192,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79f0a84f9f6060f44b5f898b8bda8ed9
-      internalID: -1264314818
+      spriteID: 504f97c71c1cf864caf0e223f1dea240
+      internalID: 1570291363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_3
+      name: Slime idle_3
       rect:
         serializedVersion: 2
         x: 192
@@ -213,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f6889384ad8f834195b15c14b2d8c4c
-      internalID: 1405214703
+      spriteID: f21c9554f8dc13447860de77e1f6f61f
+      internalID: 1325933857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_4
+      name: Slime idle_4
       rect:
         serializedVersion: 2
         x: 256
@@ -234,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 521729f68bb0c1141a70d72b10127d09
-      internalID: -809784107
+      spriteID: baa84b459fc929b45904a7396224af8e
+      internalID: 1748791401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_5
+      name: Slime idle_5
       rect:
         serializedVersion: 2
         x: 320
@@ -255,92 +255,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb4223fa99450e942b5de250f4ec8d59
-      internalID: -1428353528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Miro_idle_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41caf24f58823fc4da2486ab778b158d
-      internalID: -2116875945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Miro_idle_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43227bdf8cf8e0e40bdcab1515e4cdb0
-      internalID: 1606210317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Miro_idle_8
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 250f699a8f973d4409ebaa0a509bc429
-      internalID: 1211067383
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Miro_idle_9
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a4e83f4c40078345ab04e78e3b7bcf4
-      internalID: -252312036
+      spriteID: 5f68604b095e84f448f2c86c7aab6603
+      internalID: 2006186226
       vertices: []
       indices: 
       edges: []
@@ -356,16 +272,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Miro_idle_0: -1598735461
-      Miro_idle_1: -411415883
-      Miro_idle_2: -1264314818
-      Miro_idle_3: 1405214703
-      Miro_idle_4: -809784107
-      Miro_idle_5: -1428353528
-      Miro_idle_6: -2116875945
-      Miro_idle_7: 1606210317
-      Miro_idle_8: 1211067383
-      Miro_idle_9: -252312036
+      Slime idle_0: -1487046209
+      Slime idle_1: 1606283470
+      Slime idle_2: 1570291363
+      Slime idle_3: 1325933857
+      Slime idle_4: 1748791401
+      Slime idle_5: 2006186226
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -136,169 +136,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gato_ladoo-Sheet - Copia_0
+      name: Miro_esq_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
         height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 799a878cf52f59841aac90841af822c9
-      internalID: 1642464928
+      spriteID: b868850dcf4ee7048bad5a14e4ebf782
+      internalID: 548466157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gato_ladoo-Sheet - Copia_1
+      name: Miro_esq_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 64
         height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c00a6741b48f3f4bb1a63cc10c1d241
-      internalID: -179773207
+      spriteID: 81791b9733cc92d428e74b7e9795ab96
+      internalID: 1127831760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gato_ladoo-Sheet - Copia_2
+      name: Miro_esq_2
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 64
         height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5e3e7f5c14d48648aad980e135f82b1
-      internalID: 658988873
+      spriteID: 78129a5f87d190a4ebf9eef84ee85302
+      internalID: 2136355521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gato_ladoo-Sheet - Copia_3
+      name: Miro_esq_3
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 64
         height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59bfc5e1e0d692f48892fd3aa0c596a1
-      internalID: -271904171
+      spriteID: 2a5ffcf0dd2b8d743acca26201dc0b39
+      internalID: -1392474456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gato_ladoo-Sheet - Copia_4
+      name: Miro_esq_4
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 64
         height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f689af9444bb5714791b828b119c184d
-      internalID: -1550163411
+      spriteID: ba710ec84a2eb0e46839ad251c46e1a0
+      internalID: 1273372468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gato_ladoo-Sheet - Copia_5
+      name: Miro_esq_5
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 64
         height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e446cb4aefac82e46a66dcc3ebfe5c0f
-      internalID: 508028104
+      spriteID: f5f782d98f40db84db58e8ede613b400
+      internalID: -304815868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gato_ladoo-Sheet - Copia_6
+      name: Miro_esq_6
       rect:
         serializedVersion: 2
         x: 384
         y: 0
         width: 64
         height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d510199008234ec4eb5d48a860e9584a
-      internalID: 1043844889
+      spriteID: 5206bbd0937db7344a49f7c42d89f97f
+      internalID: -394186754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gato_ladoo-Sheet - Copia_7
+      name: Miro_esq_7
       rect:
         serializedVersion: 2
         x: 448
         y: 0
         width: 64
         height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adcaf6e6dd626804da44074c121b6ada
-      internalID: -1588623369
+      spriteID: 7a6b8097e8e48d449b1508c8e08a343c
+      internalID: -1219526618
       vertices: []
       indices: 
       edges: []
@@ -314,14 +314,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      gato_ladoo-Sheet - Copia_0: 1642464928
-      gato_ladoo-Sheet - Copia_1: -179773207
-      gato_ladoo-Sheet - Copia_2: 658988873
-      gato_ladoo-Sheet - Copia_3: -271904171
-      gato_ladoo-Sheet - Copia_4: -1550163411
-      gato_ladoo-Sheet - Copia_5: 508028104
-      gato_ladoo-Sheet - Copia_6: 1043844889
-      gato_ladoo-Sheet - Copia_7: -1588623369
+      Miro_esq_0: 548466157
+      Miro_esq_1: 1127831760
+      Miro_esq_2: 2136355521
+      Miro_esq_3: -1392474456
+      Miro_esq_4: 1273372468
+      Miro_esq_5: -304815868
+      Miro_esq_6: -394186754
+      Miro_esq_7: -1219526618
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

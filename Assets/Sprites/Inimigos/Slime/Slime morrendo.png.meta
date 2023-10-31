@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c347d80b905ecac4c979ae58dc194aba
+guid: a4b1c8311436cae4a89363c8551f8268
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Miro_idle_0
+      name: Slime morrendo_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b91e7ce08c2ea0c4ca1f67db0c67f05f
-      internalID: -1598735461
+      spriteID: 21293aec08016874493cd86697e83586
+      internalID: -1786710777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_1
+      name: Slime morrendo_1
       rect:
         serializedVersion: 2
         x: 64
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21e5361bdacb2e84aac535318cb1998e
-      internalID: -411415883
+      spriteID: 76a0b32ac071b924ba9c370526537749
+      internalID: -1061203582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_2
+      name: Slime morrendo_2
       rect:
         serializedVersion: 2
         x: 128
@@ -192,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79f0a84f9f6060f44b5f898b8bda8ed9
-      internalID: -1264314818
+      spriteID: da6da037278f6ae4ea52c58f7e1dd54a
+      internalID: 1765012986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_3
+      name: Slime morrendo_3
       rect:
         serializedVersion: 2
         x: 192
@@ -213,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f6889384ad8f834195b15c14b2d8c4c
-      internalID: 1405214703
+      spriteID: 63aff5d397892f747a58f6901322a099
+      internalID: -231061699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_4
+      name: Slime morrendo_4
       rect:
         serializedVersion: 2
         x: 256
@@ -234,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 521729f68bb0c1141a70d72b10127d09
-      internalID: -809784107
+      spriteID: f194c2fe8fbf3fa4b9a7c3c440986066
+      internalID: -1752470688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_5
+      name: Slime morrendo_5
       rect:
         serializedVersion: 2
         x: 320
@@ -255,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb4223fa99450e942b5de250f4ec8d59
-      internalID: -1428353528
+      spriteID: c0a17cdcf8620d040b2a40bdbf2c3adf
+      internalID: 124995424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_6
+      name: Slime morrendo_6
       rect:
         serializedVersion: 2
         x: 384
@@ -276,14 +276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41caf24f58823fc4da2486ab778b158d
-      internalID: -2116875945
+      spriteID: e9fbc1113b3cb5f47a722c9044f59602
+      internalID: 1867259226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_7
+      name: Slime morrendo_7
       rect:
         serializedVersion: 2
         x: 448
@@ -297,14 +297,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43227bdf8cf8e0e40bdcab1515e4cdb0
-      internalID: 1606210317
+      spriteID: 5948d8e2f3c344242a28a7bf1959bef6
+      internalID: 702394357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_8
+      name: Slime morrendo_8
       rect:
         serializedVersion: 2
         x: 512
@@ -318,14 +318,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 250f699a8f973d4409ebaa0a509bc429
-      internalID: 1211067383
+      spriteID: e787a01fafeeacd48be7f798c1808def
+      internalID: 213722712
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_9
+      name: Slime morrendo_9
       rect:
         serializedVersion: 2
         x: 576
@@ -339,8 +339,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a4e83f4c40078345ab04e78e3b7bcf4
-      internalID: -252312036
+      spriteID: 4b62722432e6fa546a6b06d10005900f
+      internalID: 43848921
       vertices: []
       indices: 
       edges: []
@@ -356,16 +356,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Miro_idle_0: -1598735461
-      Miro_idle_1: -411415883
-      Miro_idle_2: -1264314818
-      Miro_idle_3: 1405214703
-      Miro_idle_4: -809784107
-      Miro_idle_5: -1428353528
-      Miro_idle_6: -2116875945
-      Miro_idle_7: 1606210317
-      Miro_idle_8: 1211067383
-      Miro_idle_9: -252312036
+      Slime morrendo_0: -1786710777
+      Slime morrendo_1: -1061203582
+      Slime morrendo_2: 1765012986
+      Slime morrendo_3: -231061699
+      Slime morrendo_4: -1752470688
+      Slime morrendo_5: 124995424
+      Slime morrendo_6: 1867259226
+      Slime morrendo_7: 702394357
+      Slime morrendo_8: 213722712
+      Slime morrendo_9: 43848921
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

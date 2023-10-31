@@ -14,6 +14,7 @@ public class Miro : MonoBehaviour
     private Rigidbody2D   rb; // fisica do player
     private Vector2       movPlayer;
 
+    public static SpriteRenderer sprite;
     [SerializeField]
     string leveltoload;
 
@@ -26,6 +27,7 @@ public class Miro : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     

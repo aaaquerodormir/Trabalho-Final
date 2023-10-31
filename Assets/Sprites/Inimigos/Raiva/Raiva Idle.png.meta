@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1f04b4abf2b390344808a41334d9cbae
+guid: 09deeb121f157b242b27ff25fd901b02
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,190 +136,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gato_sentado_0
+      name: Raiva Idle_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 19
-        width: 28
-        height: 25
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 748f7b1fc1ca1414e8ff23520eb3f5f3
-      internalID: -1614544591
+      spriteID: e5884162ba7a7b7459c4f145447db15a
+      internalID: 2086891432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gato_sentado_1
+      name: Raiva Idle_1
       rect:
         serializedVersion: 2
-        x: 81
-        y: 19
-        width: 28
-        height: 25
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86b9076b23068d54287078712b36f527
-      internalID: 1180139842
+      spriteID: 1b9d3f058b197834ea12df212b49209f
+      internalID: 1155570257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gato_sentado_2
+      name: Raiva Idle_2
       rect:
         serializedVersion: 2
-        x: 147
-        y: 19
-        width: 26
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a47e402915a10e46a446683823ae9ca
-      internalID: 1209661256
+      spriteID: 7c728b75f64e1aa4391de55b5006ace2
+      internalID: -628369650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gato_sentado_3
+      name: Raiva Idle_3
       rect:
         serializedVersion: 2
-        x: 211
-        y: 19
-        width: 26
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42f1d47c3b2ba274197a0ffda9941e08
-      internalID: 860281016
+      spriteID: e4e2c769b287abc45b73002af372ce1c
+      internalID: 939589283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gato_sentado_4
+      name: Raiva Idle_4
       rect:
         serializedVersion: 2
-        x: 275
-        y: 19
-        width: 26
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 632324c5eb567134c954621dd229b63f
-      internalID: 1538750657
+      spriteID: a216a62583a431c458e70320c9d9e032
+      internalID: 1048623863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gato_sentado_5
+      name: Raiva Idle_5
       rect:
         serializedVersion: 2
-        x: 339
-        y: 19
-        width: 26
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 621c7e9100c8c5c419d79c88e1d3774e
-      internalID: -1392175291
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gato_sentado_6
-      rect:
-        serializedVersion: 2
-        x: 401
-        y: 19
-        width: 28
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d1b3623446e0684791ac6790ac4dfe0
-      internalID: -1527369705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gato_sentado_7
-      rect:
-        serializedVersion: 2
-        x: 465
-        y: 19
-        width: 28
-        height: 25
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e512fdeb501e20b458f0fdee28d6800c
-      internalID: -478086664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gato_sentado_8
-      rect:
-        serializedVersion: 2
-        x: 531
-        y: 19
-        width: 26
-        height: 25
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cdd9ab4db414a6d4583ef7238efafe80
-      internalID: 359056078
+      spriteID: 61b827496139a0345a0594a5d91a7b0b
+      internalID: -876840332
       vertices: []
       indices: 
       edges: []
@@ -335,15 +272,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      gato_sentado_0: -1614544591
-      gato_sentado_1: 1180139842
-      gato_sentado_2: 1209661256
-      gato_sentado_3: 860281016
-      gato_sentado_4: 1538750657
-      gato_sentado_5: -1392175291
-      gato_sentado_6: -1527369705
-      gato_sentado_7: -478086664
-      gato_sentado_8: 359056078
+      Raiva Idle_0: 2086891432
+      Raiva Idle_1: 1155570257
+      Raiva Idle_2: -628369650
+      Raiva Idle_3: 939589283
+      Raiva Idle_4: 1048623863
+      Raiva Idle_5: -876840332
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

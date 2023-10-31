@@ -9,6 +9,10 @@ public class Camera_Controller : MonoBehaviour
 
     public float insideMazeSize = 0.8f;
     public float outsideMazeSize = 2.5f;
+    public GameObject Cam;
+
+    public Material novoMaterial;
+    public Material Original;
 
     private void Start()
     {
@@ -24,9 +28,13 @@ public class Camera_Controller : MonoBehaviour
             if (insideMaze)
             {
                 mainCamera.orthographicSize = insideMazeSize;
+                Cam.SetActive(true);
+                Miro.sprite.material = novoMaterial; // troque o material do miro para um diferente
             }
             else
             {
+                Miro.sprite.material = Original;
+                Cam.SetActive(false);
                 mainCamera.orthographicSize = outsideMazeSize;
             }
         }

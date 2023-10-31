@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c347d80b905ecac4c979ae58dc194aba
+guid: e10103e4f95e47645aecc5c7114f8402
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Miro_idle_0
+      name: Tristeza atirando_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b91e7ce08c2ea0c4ca1f67db0c67f05f
-      internalID: -1598735461
+      spriteID: 41aa30c190b1e9444addfcc1e4ea69bc
+      internalID: 1043970023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_1
+      name: Tristeza atirando_1
       rect:
         serializedVersion: 2
         x: 64
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21e5361bdacb2e84aac535318cb1998e
-      internalID: -411415883
+      spriteID: ed2d1b57efc3c0a42ab2adddfa45c77d
+      internalID: 1764073245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_2
+      name: Tristeza atirando_2
       rect:
         serializedVersion: 2
         x: 128
@@ -192,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79f0a84f9f6060f44b5f898b8bda8ed9
-      internalID: -1264314818
+      spriteID: 406fc6cd08387484098786976744b50c
+      internalID: -2147001006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_3
+      name: Tristeza atirando_3
       rect:
         serializedVersion: 2
         x: 192
@@ -213,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f6889384ad8f834195b15c14b2d8c4c
-      internalID: 1405214703
+      spriteID: 1e4b2c3cddebfb2428bae7c21dd0c42d
+      internalID: 275520411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_4
+      name: Tristeza atirando_4
       rect:
         serializedVersion: 2
         x: 256
@@ -234,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 521729f68bb0c1141a70d72b10127d09
-      internalID: -809784107
+      spriteID: fd59158bd3a1f1e4483b8014a607a630
+      internalID: -2144191488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_5
+      name: Tristeza atirando_5
       rect:
         serializedVersion: 2
         x: 320
@@ -255,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb4223fa99450e942b5de250f4ec8d59
-      internalID: -1428353528
+      spriteID: f8bb87462bb3c6b4589eae039899301a
+      internalID: 1750621649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Miro_idle_6
+      name: Tristeza atirando_6
       rect:
         serializedVersion: 2
         x: 384
@@ -276,71 +276,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41caf24f58823fc4da2486ab778b158d
-      internalID: -2116875945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Miro_idle_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43227bdf8cf8e0e40bdcab1515e4cdb0
-      internalID: 1606210317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Miro_idle_8
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 250f699a8f973d4409ebaa0a509bc429
-      internalID: 1211067383
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Miro_idle_9
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a4e83f4c40078345ab04e78e3b7bcf4
-      internalID: -252312036
+      spriteID: d737ab0c1c9e5634da62b8980e8ab18b
+      internalID: -1269992463
       vertices: []
       indices: 
       edges: []
@@ -356,16 +293,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Miro_idle_0: -1598735461
-      Miro_idle_1: -411415883
-      Miro_idle_2: -1264314818
-      Miro_idle_3: 1405214703
-      Miro_idle_4: -809784107
-      Miro_idle_5: -1428353528
-      Miro_idle_6: -2116875945
-      Miro_idle_7: 1606210317
-      Miro_idle_8: 1211067383
-      Miro_idle_9: -252312036
+      Tristeza atirando_0: 1043970023
+      Tristeza atirando_1: 1764073245
+      Tristeza atirando_2: -2147001006
+      Tristeza atirando_3: 275520411
+      Tristeza atirando_4: -2144191488
+      Tristeza atirando_5: 1750621649
+      Tristeza atirando_6: -1269992463
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
