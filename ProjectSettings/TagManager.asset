@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Maze
+  - Botao
+  - Porta
+  - ObjetoEmpurravel
   layers:
   - Default
   - TransparentFX
