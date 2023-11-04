@@ -5,9 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Maze
-  - Botao
-  - Porta
-  - ObjetoEmpurravel
+  - Caixa
   layers:
   - Default
   - TransparentFX
