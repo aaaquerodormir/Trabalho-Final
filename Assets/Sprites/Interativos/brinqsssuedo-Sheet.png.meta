@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3e81d935edd7d544e971de5ab064be2f
+guid: 2d909036951087a42a7ab0cda1b212d3
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,32 +94,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -136,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: leite-Sheet_0
+      name: brinqsssuedo-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8981fe8f77c54614da50c3f280aec3c9
-      internalID: 978903262
+      spriteID: a6094d9a792631442a74c31c23006bc2
+      internalID: -1275705723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: leite-Sheet_1
+      name: brinqsssuedo-Sheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -171,50 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad97bd26157f70849aa5f1c3d80fdd51
-      internalID: 1613488507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: leite-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f34074bd43d71de43bfdc818b6af8383
-      internalID: -532082781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: leite-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7295236d75c7fe4695bd7beb753c325
-      internalID: 259053802
+      spriteID: 96448df310cc22a40bd1de8bae18bf44
+      internalID: -1557180658
       vertices: []
       indices: 
       edges: []
@@ -230,10 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      leite-Sheet_0: 978903262
-      leite-Sheet_1: 1613488507
-      leite-Sheet_2: -532082781
-      leite-Sheet_3: 259053802
+      brinqsssuedo-Sheet_0: -1275705723
+      brinqsssuedo-Sheet_1: -1557180658
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

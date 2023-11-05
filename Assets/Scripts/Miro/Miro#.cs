@@ -14,6 +14,8 @@ public class Miro : MonoBehaviour
     private Rigidbody2D   rb; // fisica do player
     private Vector2       movPlayer;
 
+    public bool temColetavel;
+
     public static SpriteRenderer sprite;
     [SerializeField]
     string leveltoload;
@@ -28,6 +30,7 @@ public class Miro : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
+        temColetavel = false;
     }
 
     
