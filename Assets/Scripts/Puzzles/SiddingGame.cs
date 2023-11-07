@@ -5,14 +5,13 @@ using UnityEngine;
 
 public class SiddingGame : MonoBehaviour
 {
-
-
     [SerializeField] GameObject minigame;
     GameObject highlight;
-
     [SerializeField] GameObject targetObject;
     [SerializeField] LayerMask OtherSide;
+
     private bool isMinigameOpen = false;
+    private bool isMouseOverMinigame = false;
 
     private void OnEnable()
     {
@@ -21,7 +20,7 @@ public class SiddingGame : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             highlight.SetActive(true);
         }
@@ -29,7 +28,7 @@ public class SiddingGame : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             highlight.SetActive(false);
         }
@@ -49,8 +48,6 @@ public class SiddingGame : MonoBehaviour
 
     void Update()
     {
-
-        
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -65,13 +62,20 @@ public class SiddingGame : MonoBehaviour
                         PlayMiniGame();
                     }
                 }
+                // Adicione verificação para ver se o mouse está sobre o minigame.
+                else if (hit.collider == minigame.GetComponent<Collider2D>())
+                {
+                    isMouseOverMinigame = true;
+                }
             }
             else
             {
-                if (isMinigameOpen)
+                if (isMinigameOpen && !isMouseOverMinigame)
                 {
                     CloseMiniGame();
                 }
+                // Redefina a variável isMouseOverMinigame.
+                isMouseOverMinigame = false;
             }
         }
     }

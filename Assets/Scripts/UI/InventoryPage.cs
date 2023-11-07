@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class InventoryPage : MonoBehaviour
 {
     [SerializeField]
@@ -11,9 +12,25 @@ public class InventoryPage : MonoBehaviour
     [SerializeField]
     private RectTransform contentPanel;
 
+    [SerializeField]
+    private UIInventoryDescription itemDescription;
+
+    [SerializeField]
+    private MouseFollower mouseFollower;
+
     List<UIInventoryItem> listOfUIItems = new List<UIInventoryItem>();
 
+    public Sprite image;
+    public int quantity;
+    public string tittle, description;
 
+
+    private void Awake()
+    {
+        Hide();
+        mouseFollower.Toggle(false);
+        itemDescription.ResetDescription();
+    }
     public void InitializeInventoryUI(int inventorysize)
     {
         for (int i = 0; i < inventorysize; i++)
@@ -37,7 +54,7 @@ public class InventoryPage : MonoBehaviour
 
     private void HandleEndDrag(UIInventoryItem item)
     {
-        
+        mouseFollower.Toggle(false);
     }
 
     private void HandleSwap(UIInventoryItem item)
@@ -47,22 +64,28 @@ public class InventoryPage : MonoBehaviour
 
     private void HandleBeginDrag(UIInventoryItem item)
     {
-        
+        mouseFollower.Toggle(true);
+        mouseFollower.SetData(image, quantity);
     }
 
     private void HandleItemSelection(UIInventoryItem item)
     {
-        Debug.Log(item.name);
+        itemDescription.SetDescription(image, tittle, description);
+        listOfUIItems[0].Select();
     }
 
     public void Show()
     {
         gameObject.SetActive(true);
+        itemDescription.ResetDescription();
+
+        listOfUIItems[0].SetData(image, quantity);
     }
 
     public void Hide()
     {
         gameObject.SetActive(false);
+
     }
 
 }
