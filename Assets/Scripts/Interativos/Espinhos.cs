@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Espinhos : MonoBehaviour
 {
-    public float tempoAtivado = 5f;
-    public float tempoDesativado = 5f;
+    public float tempoAtivado = 3f;
+    public float tempoDesativado = 3f;
     public Material corAtivado;
     public Material corDesativado;
 
@@ -14,7 +14,7 @@ public class Espinhos : MonoBehaviour
     void Start()
     {
         rend = GetComponent<Renderer>();
-        InvokeRepeating("AlternarEstado", tempoAtivado, tempoAtivado + tempoDesativado);
+        Invoke("AlternarEstado", tempoAtivado);
     }
 
     // Update is called once per frame
@@ -38,6 +38,8 @@ public class Espinhos : MonoBehaviour
                 rend.material = corDesativado;
             }
         }
+        float proximoTempo = ativo ? tempoAtivado : tempoDesativado;
+        Invoke("AlternarEstado", proximoTempo);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -52,4 +54,13 @@ public class Espinhos : MonoBehaviour
         }
        
     }
+
+    //private void Update()
+    //{
+    //    if (tempoAtivado >= tempoDesativado)
+    //    {
+            
+    //        tempoAtivado = 0; // Reseta o timer.
+    //    }
+    //}
 }
