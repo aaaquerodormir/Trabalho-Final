@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eccb8c4ae9ef2ee4baa4ca4c7e47c4f2
+guid: e7a762cd2df2e2a42bf29387e0032ed5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,173 +106,283 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Raiva-costas_0
+      name: Raiva-explodindo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76ce13d35994c7a4480b72da7117c4ed
-      internalID: 1755145149
+      spriteID: bcc92b61e09afbd4baf47305fe3bff28
+      internalID: 415343169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-costas_1
+      name: Raiva-explodindo_1
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d605236738f572438d0af618fa5c0e5
-      internalID: 1856780721
+      spriteID: 28b02a7313c264b44a277293784efd3b
+      internalID: 361238024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-costas_2
+      name: Raiva-explodindo_2
       rect:
         serializedVersion: 2
         x: 128
         y: 0
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8ce4c3a713354a468b9861a5d3b4ff8
-      internalID: 1484866547
+      spriteID: d9a4af848f1b2c84baad0823620819dc
+      internalID: 504983368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-costas_3
+      name: Raiva-explodindo_3
       rect:
         serializedVersion: 2
         x: 192
         y: 0
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a20b7d5e88847f74bb6e3aad4832452d
-      internalID: -2006004927
+      spriteID: 952bbda82d9fb1e479ede97967a8dd73
+      internalID: -1706171206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-costas_4
+      name: Raiva-explodindo_4
       rect:
         serializedVersion: 2
         x: 256
         y: 0
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ece8a5586aadfc4bad5a908b8592c8d
-      internalID: -1422496208
+      spriteID: c0897921ba290c847b5d59961ab7f505
+      internalID: 1688388973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-costas_5
+      name: Raiva-explodindo_5
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1904e6d4e1568234da7b040370a08f2c
-      internalID: 1991441221
+      spriteID: d1187b69f50fcf540843aa52346c349a
+      internalID: -1630810795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-costas_6
+      name: Raiva-explodindo_6
       rect:
         serializedVersion: 2
         x: 384
         y: 0
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69bd2221d70df7242bc5d82805c1750a
-      internalID: -1097080863
+      spriteID: 69c68773520208f49ad60cd0c3093021
+      internalID: -1075802782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-costas_7
+      name: Raiva-explodindo_7
       rect:
         serializedVersion: 2
         x: 448
         y: 0
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49aa5e17d16473847836313bb18e6ddf
-      internalID: -1192306239
+      spriteID: c0efd359eb0adc34db8fd079d9fd1365
+      internalID: -884895418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raiva-explodindo_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846d5f5956dec304c90a38f9dd27f326
+      internalID: 645233836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raiva-explodindo_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b58f8caa56d1b045bf0386dd130e956
+      internalID: -158469873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raiva-explodindo_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1e440b0b889d94f810e72b3c3621e5
+      internalID: -1054374759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raiva-explodindo_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e7797dfa5515547b4fe67d4ceedcc3
+      internalID: -2026158382
       vertices: []
       indices: 
       edges: []
@@ -288,14 +398,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Raiva-costas_0: 1755145149
-      Raiva-costas_1: 1856780721
-      Raiva-costas_2: 1484866547
-      Raiva-costas_3: -2006004927
-      Raiva-costas_4: -1422496208
-      Raiva-costas_5: 1991441221
-      Raiva-costas_6: -1097080863
-      Raiva-costas_7: -1192306239
+      Raiva-explodindo_0: 415343169
+      Raiva-explodindo_1: 361238024
+      Raiva-explodindo_10: -1054374759
+      Raiva-explodindo_11: -2026158382
+      Raiva-explodindo_2: 504983368
+      Raiva-explodindo_3: -1706171206
+      Raiva-explodindo_4: 1688388973
+      Raiva-explodindo_5: -1630810795
+      Raiva-explodindo_6: -1075802782
+      Raiva-explodindo_7: -884895418
+      Raiva-explodindo_8: 645233836
+      Raiva-explodindo_9: -158469873
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

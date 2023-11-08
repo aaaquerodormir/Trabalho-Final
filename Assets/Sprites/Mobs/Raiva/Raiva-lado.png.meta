@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c83cc973c70c46a479a9149bbce8eee0
+guid: 35fe9f2b4874d9748bdc6900f0840feb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,11 +106,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Raiva-carregando frentet_0
+      name: Raiva-lado_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5ee160e4ceba9d4796f7d116446addf
-      internalID: 1141925103
+      spriteID: df04d2b42b6de4d42bfb897e3519b0ae
+      internalID: -1346031894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-carregando frentet_1
+      name: Raiva-lado_1
       rect:
         serializedVersion: 2
         x: 64
@@ -145,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3edc4cac237fa5f4aa6f8827ea12a40a
-      internalID: -886601743
+      spriteID: 01b1b5fda1b088e40abd7274a394493f
+      internalID: 1223224640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-carregando frentet_2
+      name: Raiva-lado_2
       rect:
         serializedVersion: 2
         x: 128
@@ -166,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05d674d09ad02e54692d33353f9f41bc
-      internalID: 2115145636
+      spriteID: eac08fa724d02354eb2b76a05ab846ec
+      internalID: -1065721001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-carregando frentet_3
+      name: Raiva-lado_3
       rect:
         serializedVersion: 2
         x: 192
@@ -187,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c221eedf59639ac4fa949df67a9dfc0e
-      internalID: 1286238933
+      spriteID: b3df88be3a3bb2c4b984eccdef8a472f
+      internalID: 229153589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-carregando frentet_4
+      name: Raiva-lado_4
       rect:
         serializedVersion: 2
         x: 256
@@ -208,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dec123d5477f4494c88e2b7ddc77a391
-      internalID: -1092292196
+      spriteID: 41af9c6377627ff4da3194c5876ba568
+      internalID: -813371446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-carregando frentet_5
+      name: Raiva-lado_5
       rect:
         serializedVersion: 2
         x: 320
@@ -229,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f800596d9839fea4cb001b90216d1229
-      internalID: 2006572404
+      spriteID: c87b4f8bf1faff6428ea4f2149dfff29
+      internalID: -72699915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-carregando frentet_6
+      name: Raiva-lado_6
       rect:
         serializedVersion: 2
         x: 384
@@ -250,14 +276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 222ebdc35d8dfb34083504597f8f47e9
-      internalID: 1616173360
+      spriteID: 179e04001058c5e48bc5bff26ad0bb3e
+      internalID: 198629506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-carregando frentet_7
+      name: Raiva-lado_7
       rect:
         serializedVersion: 2
         x: 448
@@ -271,8 +297,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcc1c3382315ee642851d9f2736d17d7
-      internalID: -350894898
+      spriteID: 581b2d01fc9fb8f4e8b0172f93f78c20
+      internalID: 805296481
       vertices: []
       indices: 
       edges: []
@@ -288,14 +314,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Raiva-carregando frentet_0: 1141925103
-      Raiva-carregando frentet_1: -886601743
-      Raiva-carregando frentet_2: 2115145636
-      Raiva-carregando frentet_3: 1286238933
-      Raiva-carregando frentet_4: -1092292196
-      Raiva-carregando frentet_5: 2006572404
-      Raiva-carregando frentet_6: 1616173360
-      Raiva-carregando frentet_7: -350894898
+      Raiva-lado_0: -1346031894
+      Raiva-lado_1: 1223224640
+      Raiva-lado_2: -1065721001
+      Raiva-lado_3: 229153589
+      Raiva-lado_4: -813371446
+      Raiva-lado_5: -72699915
+      Raiva-lado_6: 198629506
+      Raiva-lado_7: 805296481
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

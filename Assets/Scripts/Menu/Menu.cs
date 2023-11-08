@@ -12,6 +12,11 @@ public class Menu : MonoBehaviour
 
     public void Controles()
     {
+        SceneManager.LoadScene("Controles");
+    }
+
+    public void Opçoes()
+    {
         SceneManager.LoadScene("Opçoes");
     }
 

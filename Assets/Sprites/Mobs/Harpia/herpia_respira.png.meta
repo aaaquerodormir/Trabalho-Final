@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 35fe9f2b4874d9748bdc6900f0840feb
+guid: 242f9f9dae60e4b4a93db194c3a21622
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,6 +94,32 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -110,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Raiva-lado_0
+      name: herpia_respira_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df04d2b42b6de4d42bfb897e3519b0ae
-      internalID: -1346031894
+      spriteID: 6440d79e0403327468557f329f955d15
+      internalID: 950525897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-lado_1
+      name: herpia_respira_1
       rect:
         serializedVersion: 2
         x: 64
@@ -145,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01b1b5fda1b088e40abd7274a394493f
-      internalID: 1223224640
+      spriteID: 52c9be4841a21cc42a87661802f06fdf
+      internalID: 59951127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-lado_2
+      name: herpia_respira_2
       rect:
         serializedVersion: 2
         x: 128
@@ -166,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eac08fa724d02354eb2b76a05ab846ec
-      internalID: -1065721001
+      spriteID: 454988136ee873b448851eeffe8606c7
+      internalID: 1183337801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-lado_3
+      name: herpia_respira_3
       rect:
         serializedVersion: 2
         x: 192
@@ -187,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3df88be3a3bb2c4b984eccdef8a472f
-      internalID: 229153589
+      spriteID: 0142706cc681e6e4399b9e8744ee7239
+      internalID: -1735280553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-lado_4
+      name: herpia_respira_4
       rect:
         serializedVersion: 2
         x: 256
@@ -208,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41af9c6377627ff4da3194c5876ba568
-      internalID: -813371446
+      spriteID: b39e1dab32fcf1b45a3338eba99c58a8
+      internalID: -2096308625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-lado_5
+      name: herpia_respira_5
       rect:
         serializedVersion: 2
         x: 320
@@ -229,50 +255,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c87b4f8bf1faff6428ea4f2149dfff29
-      internalID: -72699915
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Raiva-lado_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 179e04001058c5e48bc5bff26ad0bb3e
-      internalID: 198629506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Raiva-lado_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 581b2d01fc9fb8f4e8b0172f93f78c20
-      internalID: 805296481
+      spriteID: d572be980ae26e74ea34cf7e4fc14c03
+      internalID: -338589285
       vertices: []
       indices: 
       edges: []
@@ -288,14 +272,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Raiva-lado_0: -1346031894
-      Raiva-lado_1: 1223224640
-      Raiva-lado_2: -1065721001
-      Raiva-lado_3: 229153589
-      Raiva-lado_4: -813371446
-      Raiva-lado_5: -72699915
-      Raiva-lado_6: 198629506
-      Raiva-lado_7: 805296481
+      herpia_respira_0: 950525897
+      herpia_respira_1: 59951127
+      herpia_respira_2: 1183337801
+      herpia_respira_3: -1735280553
+      herpia_respira_4: -2096308625
+      herpia_respira_5: -338589285
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

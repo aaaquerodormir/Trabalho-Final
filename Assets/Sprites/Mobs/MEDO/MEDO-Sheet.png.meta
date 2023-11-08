@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e95482c4c4c32894db6aa452e854b247
+guid: b1129b103b3b70a42ad03bc45a27d442
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,11 +106,37 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Raiva-carregando costas_0
+      name: MEDO-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63c5974adcb1b45489ad010e780a21b1
-      internalID: 977767812
+      spriteID: 4cb1f2dc5e22f894b873e11d45e0c7b1
+      internalID: -1033455990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-carregando costas_1
+      name: MEDO-Sheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -145,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ff3d44c34d0f6a4eb1ea4e8a261a480
-      internalID: -1070956206
+      spriteID: 2e15926638818a847a88bfc79f4227c5
+      internalID: -1525452189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-carregando costas_2
+      name: MEDO-Sheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -166,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 957aaaa1c302409459110db521b1b711
-      internalID: -178034910
+      spriteID: ede33861e13d52a41bf5085473a371d3
+      internalID: 356079490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Raiva-carregando costas_3
+      name: MEDO-Sheet_3
       rect:
         serializedVersion: 2
         x: 192
@@ -187,92 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0edc0bb866c4c14c8ff4d586d92fea4
-      internalID: 1861065024
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Raiva-carregando costas_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3e6c48350264354eb4b343700f0e9fd
-      internalID: -19533526
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Raiva-carregando costas_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bd125a053fd64145831ea7448fe8002
-      internalID: 21015960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Raiva-carregando costas_6
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5defec622fa385d41a3776c19ad9f175
-      internalID: 1069636231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Raiva-carregando costas_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed5854f370c268b4d9a537ee07ed2bc3
-      internalID: -686022304
+      spriteID: 8f942ea6491d86a4d9e12aea998c3459
+      internalID: 1234964756
       vertices: []
       indices: 
       edges: []
@@ -288,14 +230,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Raiva-carregando costas_0: 977767812
-      Raiva-carregando costas_1: -1070956206
-      Raiva-carregando costas_2: -178034910
-      Raiva-carregando costas_3: 1861065024
-      Raiva-carregando costas_4: -19533526
-      Raiva-carregando costas_5: 21015960
-      Raiva-carregando costas_6: 1069636231
-      Raiva-carregando costas_7: -686022304
+      MEDO-Sheet_0: -1033455990
+      MEDO-Sheet_1: -1525452189
+      MEDO-Sheet_2: 356079490
+      MEDO-Sheet_3: 1234964756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

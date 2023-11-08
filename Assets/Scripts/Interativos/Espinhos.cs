@@ -14,32 +14,29 @@ public class Espinhos : MonoBehaviour
     void Start()
     {
         rend = GetComponent<Renderer>();
-        Invoke("AlternarEstado", tempoAtivado);
+       StartCoroutine(AlternarEstado());
     }
 
     // Update is called once per frame
-    private void AlternarEstado()
+    private IEnumerator AlternarEstado()
     {
-        ativo = !ativo;
+        while (true)
+        {
+            yield return new WaitForSeconds(ativo ? tempoAtivado : tempoDesativado);
 
-        Collider2D[] colisores = GetComponentsInChildren<Collider2D>();
-        foreach (Collider2D colisor in colisores)
-        {
-            colisor.enabled = ativo;
-        }
-        if (rend != null)
-        {
-            if (ativo)
+            ativo = !ativo;
+
+            Collider2D[] colisores = GetComponentsInChildren<Collider2D>();
+            foreach (Collider2D colisor in colisores)
             {
-                rend.material = corAtivado;
+                colisor.enabled = ativo;
             }
-            else
+
+            if (rend != null)
             {
-                rend.material = corDesativado;
+                rend.material = ativo ? corAtivado : corDesativado;
             }
         }
-        float proximoTempo = ativo ? tempoAtivado : tempoDesativado;
-        Invoke("AlternarEstado", proximoTempo);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
