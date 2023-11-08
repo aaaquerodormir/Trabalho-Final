@@ -4,60 +4,42 @@ using UnityEngine;
 
 public class Espinhos : MonoBehaviour
 {
-    public float tempoAtivado = 3f;
-    public float tempoDesativado = 3f;
-    public Material corAtivado;
-    public Material corDesativado;
-
-    private bool ativo = true;
-    private Renderer rend;
-    void Start()
+    public Animator espinhoAnimator;
+    private bool levantado = false;
+    private float timer = 0f;
+    private float duracaoLevantado = 3f;
+    private float duracaoAbaixado = 3f;
+    
+    
+    void Update()
     {
-        rend = GetComponent<Renderer>();
-       StartCoroutine(AlternarEstado());
-    }
+        timer += Time.deltaTime;
 
-    // Update is called once per frame
-    private IEnumerator AlternarEstado()
-    {
-        while (true)
+        if (levantado && timer >= duracaoLevantado)
         {
-            yield return new WaitForSeconds(ativo ? tempoAtivado : tempoDesativado);
-
-            ativo = !ativo;
-
-            Collider2D[] colisores = GetComponentsInChildren<Collider2D>();
-            foreach (Collider2D colisor in colisores)
-            {
-                colisor.enabled = ativo;
-            }
-
-            if (rend != null)
-            {
-                rend.material = ativo ? corAtivado : corDesativado;
-            }
+            levantado = false;
+            espinhoAnimator.SetBool("Levantado", false);
+            timer = 0f;
+        }
+        else if (!levantado && timer >= duracaoAbaixado)
+        {
+            levantado = true;
+            espinhoAnimator.SetBool("Levantado", true);
+            timer = 0f;
         }
     }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && ativo)
+        if (other.CompareTag("Player") && levantado)
         {
             MiroHp playerHealth = other.gameObject.GetComponent<MiroHp>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(4);
+                playerHealth.TakeDamage(2);
             }
         }
        
     }
 
-    //private void Update()
-    //{
-    //    if (tempoAtivado >= tempoDesativado)
-    //    {
-            
-    //        tempoAtivado = 0; // Reseta o timer.
-    //    }
-    //}
+   
 }
