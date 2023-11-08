@@ -17,14 +17,24 @@ public class Miro : MonoBehaviour
     public bool temColetavel;
 
     public static SpriteRenderer sprite;
+
     [SerializeField]
     string leveltoload;
 
 
     //Interação
     
+    public static bool EstaInteragindo { get; set; }
+
+    // Inventory
+
+    private Inventory inventory;
 
 
+    private void Awake()
+    {
+        inventory = new Inventory();
+    }
 
     void Start()
     {
@@ -51,6 +61,17 @@ public class Miro : MonoBehaviour
         movPlayer.Normalize();
 
         ChangeTimeLevel();
+
+
+        if(Input.GetButtonDown("Interage"))
+        {
+            EstaInteragindo = true;
+
+        }
+        else
+        {
+            EstaInteragindo = false;
+        }
 
         
     }
