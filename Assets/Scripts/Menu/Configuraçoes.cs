@@ -13,7 +13,7 @@ public class Configuraçoes : MonoBehaviour
     public float    musicVolume;
 
     //Objetos
-    public Toggle fullScreenToogle;
+    public Toggle fullScreenToggle;
     public Dropdown resolutionDropdown;
     public Dropdown qualityTextureDropdown;
     public Slider musicVolumeSlider;
@@ -29,7 +29,7 @@ public class Configuraçoes : MonoBehaviour
         }
 
         // o chamado das funções
-        fullScreenToogle.onValueChanged.AddListener(delegate { OnFullScreenToggle(); });
+        fullScreenToggle.onValueChanged.AddListener(delegate { OnFullScreenToggle(); });
         resolutionDropdown.onValueChanged.AddListener(delegate { OnResolutionChange(); });
         qualityTextureDropdown.onValueChanged.AddListener(delegate { OnTextureQualityChange(); });
         musicVolumeSlider.onValueChanged.AddListener(delegate { OnMusicVolumeChange(); });
@@ -47,17 +47,19 @@ public class Configuraçoes : MonoBehaviour
 
     public void OnFullScreenToggle()
     {
-
+        Screen.fullScreen = fullScreenToggle.isOn;
+        OnResolutionChange();
+        //Debug.Log("Toogle Ativado");
     }
 
     public void OnResolutionChange()
     {
-
+        Screen.SetResolution(resolutions[resolutionDropdown.value].width, resolutions[resolutionDropdown.value].height, fullScreenToggle.isOn);
     }
 
     public void OnTextureQualityChange()
     {
-
+        QualitySettings.SetQualityLevel(qualityTextureDropdown.value);
     }
 
     public void OnMusicVolumeChange()
