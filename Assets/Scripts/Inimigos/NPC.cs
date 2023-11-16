@@ -14,11 +14,11 @@ public class NPC : MonoBehaviour
     public float wordSpeed;
     public bool playerIsClose;
 
-    private bool teclaIPressionadaNoColisor;
+    //private bool teclaIPressionadaNoColisor;
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.I) && playerIsClose && !teclaIPressionadaNoColisor)
+        if(Input.GetKeyDown(KeyCode.I) && playerIsClose/* && !teclaIPressionadaNoColisor*/)
         {
             if(painelDialogo.activeInHierarchy)
             {
@@ -28,7 +28,7 @@ public class NPC : MonoBehaviour
             {
                 painelDialogo.SetActive(true);
                 StartCoroutine(Digitando());
-                teclaIPressionadaNoColisor = true;
+                //teclaIPressionadaNoColisor = true;
             }
         }
         
@@ -44,7 +44,7 @@ public class NPC : MonoBehaviour
         textoDialogo.text = "";
         index = 0;
         painelDialogo.SetActive(false);
-        teclaIPressionadaNoColisor = false;
+        //teclaIPressionadaNoColisor = false;
     }
 
     IEnumerator Digitando()

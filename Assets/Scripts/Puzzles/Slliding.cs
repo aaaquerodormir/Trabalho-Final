@@ -20,13 +20,9 @@ public class Slliding : MonoBehaviour
     void Start()
     {
         _camera = Camera.main;
-       
+       Shuffle();
     }
 
-    private void OnEnable()
-    {
-        Shuffle();
-    }
     // Update is called once per frame
     void Update()
     {

@@ -67,7 +67,7 @@ public class Miro : MonoBehaviour
         ChangeTimeLevel();
 
 
-        /* if(Input.GetButtonDown("Interage"))
+        if(Input.GetButtonDown("Interage"))
          {
              EstaInteragindo = true;
 
@@ -75,7 +75,7 @@ public class Miro : MonoBehaviour
          else
          {
              EstaInteragindo = false;
-         } */
+         }
 
         if (Input.GetButtonDown("Inventário"))
         {
@@ -101,8 +101,8 @@ public class Miro : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire2"))
         {
-
-            SceneManager.LoadScene(leveltoload);
+            StartCoroutine(EsperarSegundos(1f));
+            
             
         }
         if (Input.GetButtonDown("Fire3"))
@@ -148,6 +148,14 @@ public class Miro : MonoBehaviour
             CaixaLeite = true;
             Destroy(collision.gameObject);
         }
+    }
+
+    IEnumerator EsperarSegundos(float segundos)
+    {
+        
+        yield return new WaitForSeconds(segundos);
+        SceneManager.LoadScene(leveltoload);
+        
     }
 }
 
