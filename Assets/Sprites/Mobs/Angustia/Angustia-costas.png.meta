@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a7898a075c282e5408def5b731b990bd
+guid: 145583df2ea797e4c9a4c6a4308bdd3f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,32 +94,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -136,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_0
+      name: Angustia-costas_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 500992758ad2a9842bfb04051a829fd7
-      internalID: 291808794
+      spriteID: be4867b847130ca4095b2ce4ac56220f
+      internalID: -468585399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_1
+      name: Angustia-costas_1
       rect:
         serializedVersion: 2
         x: 64
@@ -171,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d72d5aca8deb1b04d97e3822c5518285
-      internalID: -550511476
+      spriteID: e3a1d13b92e080f4ab55f2064a0f6f7e
+      internalID: -1453526911
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_2
+      name: Angustia-costas_2
       rect:
         serializedVersion: 2
         x: 128
@@ -192,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4010330ea0f032540945ea9f49cb3f79
-      internalID: 1661660842
+      spriteID: 818ea27a568e0874baa50fbbe09691d8
+      internalID: 1159960676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_3
+      name: Angustia-costas_3
       rect:
         serializedVersion: 2
         x: 192
@@ -213,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19bba0503c6a97c47a8decc34401542f
-      internalID: -288992663
+      spriteID: 18dc58c65e8c3d849b2585eaae0936ee
+      internalID: 1910302167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_4
+      name: Angustia-costas_4
       rect:
         serializedVersion: 2
         x: 256
@@ -234,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b7de4edec2e74c47aa58644cbbab237
-      internalID: 1412422392
+      spriteID: 909326a5d7ea3c44b987ac3c0c501468
+      internalID: 103384471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_5
+      name: Angustia-costas_5
       rect:
         serializedVersion: 2
         x: 320
@@ -255,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8694494dd4d97464f81542ba249ead96
-      internalID: -1639466316
+      spriteID: 793bb7695ed33eb41a116d9a482ee26d
+      internalID: 651804143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_6
+      name: Angustia-costas_6
       rect:
         serializedVersion: 2
         x: 384
@@ -276,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 599160b7709cad3428aa5e7a0a238c43
-      internalID: -1187122100
+      spriteID: 3d9a146888a184f4e8bfcec75efd760f
+      internalID: -2092019204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_7
+      name: Angustia-costas_7
       rect:
         serializedVersion: 2
         x: 448
@@ -297,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 222a90dbb3d43324f9b5df2e1cbb98ea
-      internalID: -847012437
+      spriteID: 282ceca5ead0dfd4fbf5139ddfffedd0
+      internalID: 570568994
       vertices: []
       indices: 
       edges: []
@@ -314,14 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dead_ladoo-Sheet_0: 291808794
-      dead_ladoo-Sheet_1: -550511476
-      dead_ladoo-Sheet_2: 1661660842
-      dead_ladoo-Sheet_3: -288992663
-      dead_ladoo-Sheet_4: 1412422392
-      dead_ladoo-Sheet_5: -1639466316
-      dead_ladoo-Sheet_6: -1187122100
-      dead_ladoo-Sheet_7: -847012437
+      Angustia-costas_0: -468585399
+      Angustia-costas_1: -1453526911
+      Angustia-costas_2: 1159960676
+      Angustia-costas_3: 1910302167
+      Angustia-costas_4: 103384471
+      Angustia-costas_5: 651804143
+      Angustia-costas_6: -2092019204
+      Angustia-costas_7: 570568994
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

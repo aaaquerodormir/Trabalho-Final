@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a7898a075c282e5408def5b731b990bd
+guid: 232a59b865be2ca4fbac009c8b3ec3ad
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,32 +94,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -136,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_0
+      name: costas_morte-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 500992758ad2a9842bfb04051a829fd7
-      internalID: 291808794
+      spriteID: bced9bacf89a5e644a5f8a7982fb313c
+      internalID: 1677735356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_1
+      name: costas_morte-Sheet_1
       rect:
         serializedVersion: 2
         x: 64
@@ -171,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d72d5aca8deb1b04d97e3822c5518285
-      internalID: -550511476
+      spriteID: cf08d6589b1618e45ae5c61d100bfd32
+      internalID: -1045745979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_2
+      name: costas_morte-Sheet_2
       rect:
         serializedVersion: 2
         x: 128
@@ -192,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4010330ea0f032540945ea9f49cb3f79
-      internalID: 1661660842
+      spriteID: d0778f2ffa814074ba4541bfc22056d9
+      internalID: -1967456115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_3
+      name: costas_morte-Sheet_3
       rect:
         serializedVersion: 2
         x: 192
@@ -213,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19bba0503c6a97c47a8decc34401542f
-      internalID: -288992663
+      spriteID: 7b08dec66d3a1c1499c32eda4b7f11f4
+      internalID: -400254124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_4
+      name: costas_morte-Sheet_4
       rect:
         serializedVersion: 2
         x: 256
@@ -234,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b7de4edec2e74c47aa58644cbbab237
-      internalID: 1412422392
+      spriteID: 9dab84bcb043d7548936a8e79367d858
+      internalID: 1743521007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_5
+      name: costas_morte-Sheet_5
       rect:
         serializedVersion: 2
         x: 320
@@ -255,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8694494dd4d97464f81542ba249ead96
-      internalID: -1639466316
+      spriteID: 339cfd3693597664f816ee15875d608d
+      internalID: -2029681411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_6
+      name: costas_morte-Sheet_6
       rect:
         serializedVersion: 2
         x: 384
@@ -276,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 599160b7709cad3428aa5e7a0a238c43
-      internalID: -1187122100
+      spriteID: 1e3f7373858156342b5708e94f56f5ec
+      internalID: -1824232621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_7
+      name: costas_morte-Sheet_7
       rect:
         serializedVersion: 2
         x: 448
@@ -297,8 +271,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 222a90dbb3d43324f9b5df2e1cbb98ea
-      internalID: -847012437
+      spriteID: 9be82e919745ece4485fc5ba054f232e
+      internalID: 1492721944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: costas_morte-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97bb84934a599749bf803f47d5379c1
+      internalID: 1421951110
       vertices: []
       indices: 
       edges: []
@@ -314,14 +309,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dead_ladoo-Sheet_0: 291808794
-      dead_ladoo-Sheet_1: -550511476
-      dead_ladoo-Sheet_2: 1661660842
-      dead_ladoo-Sheet_3: -288992663
-      dead_ladoo-Sheet_4: 1412422392
-      dead_ladoo-Sheet_5: -1639466316
-      dead_ladoo-Sheet_6: -1187122100
-      dead_ladoo-Sheet_7: -847012437
+      costas_morte-Sheet_0: 1677735356
+      costas_morte-Sheet_1: -1045745979
+      costas_morte-Sheet_2: -1967456115
+      costas_morte-Sheet_3: -400254124
+      costas_morte-Sheet_4: 1743521007
+      costas_morte-Sheet_5: -2029681411
+      costas_morte-Sheet_6: -1824232621
+      costas_morte-Sheet_7: 1492721944
+      costas_morte-Sheet_8: 1421951110
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a7898a075c282e5408def5b731b990bd
+guid: 1bb6760dc26eedf4eafc4adf22de236a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,32 +94,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -136,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_0
+      name: gato_morte-Sheet (1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 500992758ad2a9842bfb04051a829fd7
-      internalID: 291808794
+      spriteID: 97e57d3161199c346b727b23451d7360
+      internalID: 1402526841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_1
+      name: gato_morte-Sheet (1)_1
       rect:
         serializedVersion: 2
         x: 64
@@ -171,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d72d5aca8deb1b04d97e3822c5518285
-      internalID: -550511476
+      spriteID: b45204a17f6eea743b7f275dc6256f0f
+      internalID: 1645379843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_2
+      name: gato_morte-Sheet (1)_2
       rect:
         serializedVersion: 2
         x: 128
@@ -192,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4010330ea0f032540945ea9f49cb3f79
-      internalID: 1661660842
+      spriteID: 750406fd98fe41b4ba28f5c951e8734c
+      internalID: 449174920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_3
+      name: gato_morte-Sheet (1)_3
       rect:
         serializedVersion: 2
         x: 192
@@ -213,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19bba0503c6a97c47a8decc34401542f
-      internalID: -288992663
+      spriteID: 6a19dacc6ef26c44eb7444e2bbb696a8
+      internalID: -123877659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_4
+      name: gato_morte-Sheet (1)_4
       rect:
         serializedVersion: 2
         x: 256
@@ -234,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b7de4edec2e74c47aa58644cbbab237
-      internalID: 1412422392
+      spriteID: 30001f81452820944ac4919cd66114f4
+      internalID: 1581785658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_5
+      name: gato_morte-Sheet (1)_5
       rect:
         serializedVersion: 2
         x: 320
@@ -255,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8694494dd4d97464f81542ba249ead96
-      internalID: -1639466316
+      spriteID: 5d2ef19326a4b06478d74ef98541878c
+      internalID: 492462856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_6
+      name: gato_morte-Sheet (1)_6
       rect:
         serializedVersion: 2
         x: 384
@@ -276,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 599160b7709cad3428aa5e7a0a238c43
-      internalID: -1187122100
+      spriteID: 279dab5a714a4f04e859137995476fe0
+      internalID: -1449412846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ladoo-Sheet_7
+      name: gato_morte-Sheet (1)_7
       rect:
         serializedVersion: 2
         x: 448
@@ -297,8 +271,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 222a90dbb3d43324f9b5df2e1cbb98ea
-      internalID: -847012437
+      spriteID: 9f4a6085d3d9ced4985bd2f5cb94b4ad
+      internalID: -1753016639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_morte-Sheet (1)_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f321b8fcf35fb4380c16b9870b872f
+      internalID: -2111636051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_morte-Sheet (1)_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f96b1910cc30a0408731abf56474685
+      internalID: -539216223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_morte-Sheet (1)_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c4e7ba27fa7c44b92713dee35b8688
+      internalID: 861287392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_morte-Sheet (1)_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13e4fb8b89afde418f7fde6dc32b3a5
+      internalID: 308261311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_morte-Sheet (1)_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cda92f4863bf3c4384ae8defeebd7ac
+      internalID: 42709141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_morte-Sheet (1)_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3c3308f05b0a84d91f38608cc4c105
+      internalID: -1532976126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gato_morte-Sheet (1)_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46000d3e00d5baf478fcd27e592f1acf
+      internalID: -1672235086
       vertices: []
       indices: 
       edges: []
@@ -314,14 +435,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dead_ladoo-Sheet_0: 291808794
-      dead_ladoo-Sheet_1: -550511476
-      dead_ladoo-Sheet_2: 1661660842
-      dead_ladoo-Sheet_3: -288992663
-      dead_ladoo-Sheet_4: 1412422392
-      dead_ladoo-Sheet_5: -1639466316
-      dead_ladoo-Sheet_6: -1187122100
-      dead_ladoo-Sheet_7: -847012437
+      gato_morte-Sheet (1)_0: 1402526841
+      gato_morte-Sheet (1)_1: 1645379843
+      gato_morte-Sheet (1)_10: 861287392
+      gato_morte-Sheet (1)_11: 308261311
+      gato_morte-Sheet (1)_12: 42709141
+      gato_morte-Sheet (1)_13: -1532976126
+      gato_morte-Sheet (1)_14: -1672235086
+      gato_morte-Sheet (1)_2: 449174920
+      gato_morte-Sheet (1)_3: -123877659
+      gato_morte-Sheet (1)_4: 1581785658
+      gato_morte-Sheet (1)_5: 492462856
+      gato_morte-Sheet (1)_6: -1449412846
+      gato_morte-Sheet (1)_7: -1753016639
+      gato_morte-Sheet (1)_8: -2111636051
+      gato_morte-Sheet (1)_9: -539216223
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
