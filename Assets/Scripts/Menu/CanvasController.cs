@@ -5,9 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class CanvasController : MonoBehaviour
 {
+    private GameManagerController _GameController;
+
+    //Canvas
     [Header("Pause")]
     public GameObject PanelPause;
     bool isPaused = false;
+
+    //Canvas fim de jogo
+    public GameObject PanelGameOver;
+
+    private void Start()
+    {
+        _GameController = FindObjectOfType(typeof(GameManagerController)) as GameManagerController;
+    }
 
     void Update()
     {
@@ -52,6 +63,21 @@ public class CanvasController : MonoBehaviour
     public void Sair()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    public void GameOver()
+    {
+        _GameController.fxGame.mute = true;
+        _GameController.fxGame.Stop();
+
+        _GameController.fxGameOver.mute = false;
+        _GameController.fxGameOver.Play();
+
+
+        Time.timeScale = 0;
+
+        PanelGameOver.SetActive(true);
+
     }
 
 }

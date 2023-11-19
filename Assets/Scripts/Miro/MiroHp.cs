@@ -10,11 +10,14 @@ public class MiroHp : MonoBehaviour
     public float maxHealth;
     public Image healthBar;
 
+    private CanvasController _CanvasController;
+
 
     // Start is called before the first frame update
     void Start()
     {
         maxHealth = health;
+        _CanvasController = FindObjectOfType(typeof(CanvasController)) as CanvasController;
     }
 
     // Update is called once per frame
@@ -36,13 +39,8 @@ public class MiroHp : MonoBehaviour
 
         if (health <= 0)
         {
-            //PerformPlayerRespawn(gameObject);
-            Destroy(gameObject);
+            Destroy(gameObject, 10);
+            _CanvasController.GameOver();
         }
     }
-    //void PerformPlayerRespawn(GameObject player)
-    //{
-    //    Scene currentScene = SceneManager.GetActiveScene();
-    //    SceneManager.LoadScene(currentScene.name);
-    //}
 }
