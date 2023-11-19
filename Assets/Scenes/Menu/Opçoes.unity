@@ -3160,6 +3160,7 @@ GameObject:
   - component: {fileID: 1736728422}
   - component: {fileID: 1736728426}
   - component: {fileID: 1736728427}
+  - component: {fileID: 1736728428}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3287,10 +3288,23 @@ MonoBehaviour:
   resolutionIndex: 0
   qualityTexture: 0
   musicVolume: 0
-  fullScreenToggle: {fileID: 673803764}
+  fullScreenToogle: {fileID: 0}
   resolutionDropdown: {fileID: 1466066891}
   qualityTextureDropdown: {fileID: 1990689159}
   musicVolumeSlider: {fileID: 2141860395}
+--- !u!114 &1736728428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736728421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cbebc91b28912e44acfb7e0a1f88937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controleSom: {fileID: 24100000, guid: f678069f5ba0f5b408b53a576bb058fb, type: 2}
 --- !u!1 &1897022263
 GameObject:
   m_ObjectHideFlags: 0
@@ -3857,13 +3871,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 1388179496}
   m_HandleRect: {fileID: 653262464}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -80
+  m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1736728428}
+        m_TargetAssemblyTypeName: Volume, Assembly-CSharp
+        m_MethodName: SetVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &2141860396
 RectTransform:
   m_ObjectHideFlags: 0

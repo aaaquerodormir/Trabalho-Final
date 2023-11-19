@@ -2,8 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExplosaoInimiga : MonoBehaviour
+using UnityEngine.Audio;
+public class Volume : MonoBehaviour
 {
+
+    [SerializeField] AudioMixer controleSom;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +18,10 @@ public class ExplosaoInimiga : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void SetVolume(float volume)
+    {
+        controleSom.SetFloat("volume", volume);
     }
 }

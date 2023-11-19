@@ -6,6 +6,9 @@ public class InimigoPerseguindo : MonoBehaviour
 {
     public float speed;
     public float campoDeVisao;
+    public float campoDeAtaque;
+
+
 
     private Transform player;
 
@@ -17,7 +20,7 @@ public class InimigoPerseguindo : MonoBehaviour
     void Update()
     {
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
-        if (distanceFromPlayer < campoDeVisao)
+        if (distanceFromPlayer < campoDeVisao && distanceFromPlayer > campoDeAtaque)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed * Time.deltaTime);
 
@@ -28,5 +31,6 @@ public class InimigoPerseguindo : MonoBehaviour
     {
         Gizmos.color = Color.gray;
         Gizmos.DrawWireSphere(transform.position, campoDeVisao);
+        Gizmos.DrawWireSphere(transform.position, campoDeAtaque);
     }
 }

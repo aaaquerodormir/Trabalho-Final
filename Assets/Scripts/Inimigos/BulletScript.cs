@@ -11,8 +11,19 @@ public class BulletScript : MonoBehaviour
     {
         bulletRB = GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player");
-        Vector2 moveDir = (target.transform.position - transform.position).normalized * speed;
-        bulletRB.velocity = new Vector2(moveDir.x, moveDir.y);
+
+        //direção do tiro
+        Vector2 moveDir = target.transform.position - transform.position;
+
+        //velocidade do tiro
+        bulletRB.velocity = moveDir.normalized * speed;
+
+        // Calcula o ângulo entre a direção do tiro e o eixo X
+        float angle = Mathf.Atan2(moveDir.y, moveDir.x) * Mathf.Rad2Deg;
+
+        // Rotaciona o sprite do tiro na direção do ângulo calculado
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
         Destroy(this.gameObject, 2);
     }
     private void OnTriggerEnter2D(Collider2D other)
