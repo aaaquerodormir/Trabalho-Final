@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,6 +8,7 @@ using UnityEngine.Events;
 
 public class Herpia : MonoBehaviour
 {
+    public GameObject highlight;
 
     [SerializeField]
     private Miro _jogadorInterage;
@@ -16,6 +18,7 @@ public class Herpia : MonoBehaviour
 
     private bool _podeExecutar;
 
+    
 
     // Update is called once per frame
     void Update()
@@ -31,11 +34,28 @@ public class Herpia : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        _podeExecutar = true; 
+        _podeExecutar = true;
+
+        if (collision.CompareTag("Player"))
+        {
+            highlight.SetActive(true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         _podeExecutar = false;
+
+        if (collision.CompareTag("Player"))
+        {
+            highlight.SetActive(false);
+        }
     }
+
+    private void OnEnable()
+    {
+        highlight = transform.GetChild(0).gameObject;
+    }
+
+    
 }

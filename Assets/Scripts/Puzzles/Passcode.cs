@@ -15,6 +15,8 @@ public class Passcode : MonoBehaviour
     public GameObject Keypad;
     [SerializeField] private GameObject endPanel;
 
+    public GameObject passardetela;
+
     public void CodeFunction(string Numbers)
     {
         NrIndex++;
@@ -26,8 +28,8 @@ public class Passcode : MonoBehaviour
     {
         if(Nr == Code)
         {
-           Keypad.SetActive(false);
-           endPanel.SetActive(false);
+            Casa.Abriu();
+            passardetela.SetActive(true);
         }
     }
 

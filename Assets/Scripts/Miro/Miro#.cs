@@ -14,6 +14,8 @@ public class Miro : MonoBehaviour
     private Rigidbody2D   rb; // fisica do player
     private Vector2       movPlayer;
 
+    private bool _isAttack = false;
+
     public bool temColetavel;
 
     public static SpriteRenderer sprite;
@@ -33,8 +35,8 @@ public class Miro : MonoBehaviour
     public static bool Ball;
     public static bool Vara;
     public static bool CaixaLeite;
-         
 
+    
 
 
 
@@ -63,7 +65,7 @@ public class Miro : MonoBehaviour
         anim.SetFloat("Vertical", movPlayer.y);
         anim.SetFloat("Speed", movPlayer.magnitude);
         movPlayer.Normalize();
-
+        OnAttack();
         ChangeTimeLevel();
 
 
@@ -91,8 +93,14 @@ public class Miro : MonoBehaviour
             }
         }
 
-
-
+        if(_isAttack)
+        {
+            anim.SetFloat("Ataque", 2.1f);
+        }
+        if(!_isAttack) 
+        {
+            anim.SetFloat("Ataque", 1.9f);
+        }
     }
 
 
@@ -156,6 +164,37 @@ public class Miro : MonoBehaviour
         yield return new WaitForSeconds(segundos);
         SceneManager.LoadScene(leveltoload);
         
+    }
+
+    void OnAttack()
+    {
+        if(Input.GetButtonDown("Fire1"))
+        {
+            _isAttack = true;
+            speed = 0;
+
+            movPlayer = Vector2.zero;
+
+            float valorAtaque = anim.GetFloat("Lateral");
+
+            if (valorAtaque > 0)
+            {
+                sprite.flipX = false; // Não inverte o sprite para a direita
+            }
+            else if (valorAtaque < 0)
+            {
+                sprite.flipX = true; // Inverte o sprite para a esquerda
+            }
+        }
+
+        if(Input.GetButtonUp("Fire1"))
+        {
+            _isAttack = false;
+            speed = 2;
+            movPlayer = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+
+            sprite.flipX = false;
+        }
     }
 }
 
