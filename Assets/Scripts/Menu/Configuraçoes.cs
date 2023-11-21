@@ -47,17 +47,18 @@ public class Configuraçoes : MonoBehaviour
 
     public void OnFullScreenToggle()
     {
-
+        Screen.fullScreen = fullScreenToogle.isOn;
+        OnResolutionChange();
     }
 
     public void OnResolutionChange()
     {
-
+        Screen.SetResolution(resolutions[resolutionDropdown.value].width, resolutions[resolutionDropdown.value].height, fullScreenToogle.isOn);
     }
 
     public void OnTextureQualityChange()
     {
-
+        QualitySettings.SetQualityLevel(qualityTextureDropdown.value);
     }
 
     public void OnMusicVolumeChange()

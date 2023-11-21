@@ -779,7 +779,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2384355584294038643}
         m_TargetAssemblyTypeName: CanvasController, Assembly-CSharp
         m_MethodName: Sair
         m_Mode: 1
@@ -1666,7 +1666,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2384355584294038643}
         m_TargetAssemblyTypeName: CanvasController, Assembly-CSharp
         m_MethodName: ResumeGame
         m_Mode: 1
@@ -1949,7 +1949,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2384355584294038643}
         m_TargetAssemblyTypeName: CanvasController, Assembly-CSharp
         m_MethodName: RestartGame
         m_Mode: 1

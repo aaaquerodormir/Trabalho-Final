@@ -3284,7 +3284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb3abeb715044042bbab46cd42021de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFullscreen: 1
+  isFullscreen: 0
   resolutionIndex: 0
   qualityTexture: 0
   musicVolume: 0
