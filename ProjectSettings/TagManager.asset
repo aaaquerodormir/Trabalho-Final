@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Maze
   - Caixa
+  - Milk
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - OtherSide

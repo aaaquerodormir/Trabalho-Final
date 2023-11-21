@@ -43,4 +43,5 @@ public class MiroHp : MonoBehaviour
             _CanvasController.GameOver();
         }
     }
+
 }
