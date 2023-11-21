@@ -15,10 +15,12 @@ public class NPC : MonoBehaviour
     public bool playerIsClose;
 
     //private bool teclaIPressionadaNoColisor;
+    public GameObject highlight;
+
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.I) && playerIsClose/* && !teclaIPressionadaNoColisor*/)
+        if(Input.GetKeyDown(KeyCode.E) && playerIsClose/* && !teclaIPressionadaNoColisor*/)
         {
             if(painelDialogo.activeInHierarchy)
             {
@@ -78,7 +80,8 @@ public class NPC : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            playerIsClose = true; 
+            playerIsClose = true;
+            highlight.SetActive(true);
         }
 
         
@@ -88,6 +91,7 @@ public class NPC : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            highlight.SetActive(false);
             playerIsClose = false;
             zeroText();
         }

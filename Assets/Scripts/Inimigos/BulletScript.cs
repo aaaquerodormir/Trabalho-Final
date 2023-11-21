@@ -35,7 +35,8 @@ public class BulletScript : MonoBehaviour
             {
                 playerHealth.TakeDamage(2);
             }
+            Destroy(this.gameObject);
         }
-        Destroy(this.gameObject);
+        
     }
 }

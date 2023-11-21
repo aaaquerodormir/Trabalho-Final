@@ -15,6 +15,7 @@ public class NextLevel : MonoBehaviour
         
         if (other.CompareTag("Player"))
         {
+            PlayerPrefs.DeleteAll();
             levelLoader.Transition(SceneName);
         }
     }

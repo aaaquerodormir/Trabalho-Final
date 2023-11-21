@@ -36,10 +36,12 @@ public class Miro : MonoBehaviour
     public static bool Vara;
     public static bool CaixaLeite;
 
-    
 
+    float speedAtual;
+    public float speedDash;
 
-
+    public float reloadDash;
+    bool InDash;
 
     void Start()
     {
@@ -47,24 +49,37 @@ public class Miro : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         temColetavel = false;
         Backpack = false;
+        speedAtual = speed;
     }
 
     
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movPlayer * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movPlayer * speedAtual * Time.fixedDeltaTime);
     }
 
     void Update()
     {
-
-        movPlayer = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        if(speedAtual == speed)
+        {
+            movPlayer = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        }
+        
 
         anim.SetFloat("Lateral", movPlayer.x);           // aqui temos o controle do animator para cada lado  
         anim.SetFloat("Vertical", movPlayer.y);
         anim.SetFloat("Speed", movPlayer.magnitude);
         movPlayer.Normalize();
+
+        if(Input.GetKeyDown(KeyCode.LeftShift) && movPlayer != Vector2.zero && InDash == false)
+        {
+            InDash = true;
+            speedAtual = speedDash;
+            Invoke("PosDash", 0.1f);
+        }
+
+
         OnAttack();
         ChangeTimeLevel();
 
@@ -168,7 +183,7 @@ public class Miro : MonoBehaviour
 
     void OnAttack()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if(Input.GetKeyDown(KeyCode.CapsLock))
         {
             _isAttack = true;
             speed = 0;
@@ -187,7 +202,7 @@ public class Miro : MonoBehaviour
             }
         }
 
-        if(Input.GetButtonUp("Fire1"))
+        if(Input.GetKeyUp(KeyCode.CapsLock))
         {
             _isAttack = false;
             speed = 2;
@@ -195,6 +210,17 @@ public class Miro : MonoBehaviour
 
             sprite.flipX = false;
         }
+    }
+
+    void PosDash()
+    {
+        speedAtual = speed;
+        Invoke("FimDash", reloadDash);
+    }
+
+    void FimDash()
+    {
+        InDash = false;
     }
 }
 

@@ -7,7 +7,7 @@ public class Keypad : MonoBehaviour
 {
     [SerializeField] GameObject minigame;
 
-    private bool isMinigameOpen = false;
+    public bool isMinigameOpen = false;
     
 
 

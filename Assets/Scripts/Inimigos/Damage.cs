@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Damage : MonoBehaviour
 {
+    //public PlayerHealth pHealth;
     public float damage;
+    public float restartDelay = 1.0f; // Tempo de atraso em segundos
     // Start is called before the first frame update
     void Start()
     {
@@ -27,10 +29,16 @@ public class Damage : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(damage);
-               
+                if (playerHealth.health <= 0)
+                {
+                    Invoke("RestartScene", restartDelay); // Chama a função de reiniciar após o atraso
+                }
             }
         }
     }
 
-
+    void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }

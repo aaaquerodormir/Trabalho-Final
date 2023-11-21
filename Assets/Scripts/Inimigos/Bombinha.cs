@@ -29,6 +29,7 @@ public class Bombinha : MonoBehaviour
             direcao = direcao.normalized;
 
             this.rigidbody.velocity = (this.velocidadeMovimento * direcao);
+            Debug.Log("this.rigibody.velocity");
         }
         else
         {
