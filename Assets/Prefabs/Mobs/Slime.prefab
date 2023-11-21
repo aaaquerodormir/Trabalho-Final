@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3126175395282496657}
   - component: {fileID: 7214738740282155288}
   - component: {fileID: 6511823322641519312}
+  - component: {fileID: 212843010729218938}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Untagged
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1487046209, guid: 14dde445c9ea3ef458fc53d8cb1149f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -134,3 +135,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &212843010729218938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4236688482913078043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb9bfa88e4053b4fb13d51c90bd0fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alvo: {fileID: 0}
+  velocidadeMovimento: 1
+  rigidbody: {fileID: 6511823322641519312}
+  distanciaMinima: 0.4
+  spriteRenderer: {fileID: 3126175395282496657}
+  animator: {fileID: 7214738740282155288}
+  corAreaVisao: {r: 0, g: 0, b: 0, a: 0}
+  corDirecaoMovimento: {r: 0, g: 0, b: 0, a: 0}
+  raioVisao: 1.3
+  layerAreaVisao:
+    serializedVersion: 2
+    m_Bits: 8
+  distanciaMaximaAtaque: 0.4
+  intervaloEntreAtaques: 0.4

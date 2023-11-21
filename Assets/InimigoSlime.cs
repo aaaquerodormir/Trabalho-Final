@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class InimigoSlime : MonoBehaviour
 {
-    #region movimentação
-
     [SerializeField]
     private Transform alvo;
+
+    #region movimentação
+
+
     [SerializeField]
     private float velocidadeMovimento;
     [SerializeField]
@@ -69,7 +71,9 @@ public class InimigoSlime : MonoBehaviour
 
     private void Atacar()
     {
-        
+        this.animator.SetTrigger("atacando");
+        MiroHp miroHp = alvo.GetComponent<MiroHp>();
+        miroHp.TakeDamage(0);
     }
 
     private void OnDrawGizmos()

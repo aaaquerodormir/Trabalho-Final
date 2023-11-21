@@ -9047,13 +9047,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 212843010729218938, guid: 4843538174f320343bcc902e65e3777d, type: 3}
+      propertyPath: alvo
+      value: 
+      objectReference: {fileID: 1989455733}
+    - target: {fileID: 212843010729218938, guid: 4843538174f320343bcc902e65e3777d, type: 3}
+      propertyPath: intervaloEntreAtaques
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2573344562368165302, guid: 4843538174f320343bcc902e65e3777d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.17
+      value: 4.578
       objectReference: {fileID: 0}
     - target: {fileID: 2573344562368165302, guid: 4843538174f320343bcc902e65e3777d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.86
+      value: 4.096
       objectReference: {fileID: 0}
     - target: {fileID: 2573344562368165302, guid: 4843538174f320343bcc902e65e3777d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9098,13 +9106,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4236688482913078043, guid: 4843538174f320343bcc902e65e3777d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1072248061}
-    - targetCorrespondingSourceObject: {fileID: 4236688482913078043, guid: 4843538174f320343bcc902e65e3777d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1072248067}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4843538174f320343bcc902e65e3777d, type: 3}
 --- !u!1001 &794749682
 PrefabInstance:
@@ -9274,6 +9276,7 @@ MonoBehaviour:
   speed: 0
   campoDeVisao: 0
   campoDeAtaque: 0
+  anim: {fileID: 0}
 --- !u!1001 &966110704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9577,40 +9580,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2875666444651107292, guid: 4376a0b20d1e3194c985f9a81b426f93, type: 3}
   m_PrefabInstance: {fileID: 1038671193}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1072248060 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4236688482913078043, guid: 4843538174f320343bcc902e65e3777d, type: 3}
-  m_PrefabInstance: {fileID: 793140450}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1072248061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072248060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d57bd83df20a40b43a9ce87846b65a00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  campoDeVisao: 0
-  campoDeAtaque: 0
---- !u!114 &1072248067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072248060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 807fa1a091bd5f94786613707d03ab20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
-  restartDelay: 1
 --- !u!1001 &1077654348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11823,6 +11792,10 @@ PrefabInstance:
       value: Miro
       objectReference: {fileID: 0}
     - target: {fileID: 308609920528560303, guid: d2d83ab608d92424ba321a531fb78f68, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 308609920528560303, guid: d2d83ab608d92424ba321a531fb78f68, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -11856,11 +11829,11 @@ PrefabInstance:
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 4868016879534998489, guid: d2d83ab608d92424ba321a531fb78f68, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.9
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4868016879534998489, guid: d2d83ab608d92424ba321a531fb78f68, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.84
+      value: 2.62
       objectReference: {fileID: 0}
     - target: {fileID: 4868016879534998489, guid: d2d83ab608d92424ba321a531fb78f68, type: 3}
       propertyPath: m_LocalPosition.z
