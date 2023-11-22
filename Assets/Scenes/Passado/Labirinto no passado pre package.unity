@@ -716,7 +716,7 @@ Transform:
   m_GameObject: {fileID: 202907481}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0069999998, y: 0.2420003, z: -12.521129}
+  m_LocalPosition: {x: 11.32, y: -3.54, z: -12.521129}
   m_LocalScale: {x: 1.2521129, y: 1.2521129, z: 1.2521129}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8879,11 +8879,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5751247553727657888, guid: 493d8aa6899deed4b92766ee4e59923b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.03
+      value: 9.03
       objectReference: {fileID: 0}
     - target: {fileID: 5751247553727657888, guid: 493d8aa6899deed4b92766ee4e59923b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.64
+      value: 1.95
       objectReference: {fileID: 0}
     - target: {fileID: 5751247553727657888, guid: 493d8aa6899deed4b92766ee4e59923b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9273,10 +9273,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d57bd83df20a40b43a9ce87846b65a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  campoDeVisao: 0
+  speed: 1
+  campoDeVisao: 2
   campoDeAtaque: 0
-  anim: {fileID: 0}
+  anim: {fileID: 962151356}
+--- !u!95 &962151356 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1874624489743486365, guid: 493d8aa6899deed4b92766ee4e59923b, type: 3}
+  m_PrefabInstance: {fileID: 694307157}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &966110704
 PrefabInstance:
   m_ObjectHideFlags: 0
