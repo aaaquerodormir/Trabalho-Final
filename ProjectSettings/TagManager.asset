@@ -12,6 +12,8 @@ TagManager:
   - Bing
   - La
   - Vara
+  - CATK
+  - Boss
   layers:
   - Default
   - TransparentFX

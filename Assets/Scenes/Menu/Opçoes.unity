@@ -3284,11 +3284,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb3abeb715044042bbab46cd42021de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFullscreen: 0
+  isFullscreen: 1
   resolutionIndex: 0
   qualityTexture: 0
   musicVolume: 0
-  fullScreenToogle: {fileID: 673803764}
+  fullScreenToogle: {fileID: 0}
   resolutionDropdown: {fileID: 1466066891}
   qualityTextureDropdown: {fileID: 1990689159}
   musicVolumeSlider: {fileID: 2141860395}

@@ -43,10 +43,15 @@ public class Miro : MonoBehaviour
     public float reloadDash;
     bool InDash;
 
+    private void Awake()
+    {
+        AtualizarAnimatorDeAcordoComCena();
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
+         
         temColetavel = false;
         Backpack = false;
         speedAtual = speed;
@@ -61,6 +66,7 @@ public class Miro : MonoBehaviour
 
     void Update()
     {
+       
         if(speedAtual == speed)
         {
             movPlayer = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
@@ -116,6 +122,8 @@ public class Miro : MonoBehaviour
         {
             anim.SetFloat("Ataque", 1.9f);
         }
+
+        
     }
 
 
@@ -221,6 +229,25 @@ public class Miro : MonoBehaviour
     void FimDash()
     {
         InDash = false;
+    }
+
+    void AtualizarAnimatorDeAcordoComCena()
+    {
+        
+        string nomeCenaAtual = SceneManager.GetActiveScene().name;
+
+        
+        if (nomeCenaAtual == "Floresta")
+        {
+            
+            anim.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("AnimatorControllers/Miro1");
+        }
+        else if (nomeCenaAtual == "Floresta--")
+        {
+            
+            anim.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("AnimatorControllers/DeadMiro1");
+        }
+        
     }
 }
 
