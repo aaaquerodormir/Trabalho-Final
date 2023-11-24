@@ -3288,7 +3288,7 @@ MonoBehaviour:
   resolutionIndex: 0
   qualityTexture: 0
   musicVolume: 0
-  fullScreenToogle: {fileID: 0}
+  fullScreenToogle: {fileID: 673803764}
   resolutionDropdown: {fileID: 1466066891}
   qualityTextureDropdown: {fileID: 1990689159}
   musicVolumeSlider: {fileID: 2141860395}
