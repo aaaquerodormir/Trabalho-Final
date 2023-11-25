@@ -8,34 +8,34 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Settings/Scenes/URP2DSceneTemplate.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Menu/Menu.unity
     guid: 0ec2454c13ee9aa47b145da659082a6e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Menu/Loading.unity
     guid: 8bbc55e8bf9be4841b8a72df178d9978
-  - enabled: 0
+  - enabled: 1
     path: "Assets/Scenes/Menu/Op\xE7oes.unity"
     guid: 49ea9e33c43138a4e8585ca51ededd24
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Menu/Controles.unity
     guid: 04a90a78fea54c94bbbdb4f6d6efa962
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Floresta.unity
     guid: c49aeaae180eb064283a2b6b107e0133
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Passado/Floresta--.unity
     guid: d0e6461faec6561418e8d2d620409b10
   - enabled: 1
     path: Assets/Scenes/Labirinto.unity
     guid: 7544c55750d57444e96e7b7a43347898
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Passado/Labirinto1.unity
     guid: 62bdbcbecfd23fa4982fba69a03eeff9
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Casa.unity
     guid: a91086a9021f81b4bbc056c786437a98
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Passado/Casa--.unity
     guid: 073246b9469df3c49ab525e8e7a5869d
   m_configObjects: {}

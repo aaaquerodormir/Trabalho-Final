@@ -6,7 +6,7 @@ public class Medo : MonoBehaviour
 {
     private MeioCirculo meioCirculo;
     public LayerMask layerDoJogador;
-    public float tempoEntreAtaques = 2f; // Alterado para atacar a cada 2 segundos
+    public float tempoEntreAtaques = 1f; // Alterado para atacar a cada 2 segundos
     private float timer;
     private Animator animator;
     private Collider2D currentPlayerCollider; // Adicionada uma variável para armazenar o collider do jogador atual
@@ -39,18 +39,27 @@ public class Medo : MonoBehaviour
                 {
                     // Incrementa o timer
                     timer += Time.deltaTime;
+
+
                 }
+                // Ativar a transição de idle para atacando
+                animator.SetBool("Atacando", true);
             }
             else
             {
                 // Resetar o timer se o jogador sair da área de visão
                 ResetarTimer();
+
+                animator.SetBool("Atacando", false);
             }
         }
         else
         {
             // Resetar o timer se o jogador não estiver na área de visão
             ResetarTimer();
+
+            // Desativar a transição de atacando para idle
+            animator.SetBool("Atacando", false);
         }
     }
 
@@ -87,7 +96,7 @@ public class Medo : MonoBehaviour
             playerHealth.TakeDamage(2);
         }
 
-        animator.SetTrigger("Atacar");
+        
     }
 
     void ResetarTimer()

@@ -36,8 +36,15 @@ public class Bombinha : MonoBehaviour
             {
                 if (movementDirection != Vector2.zero)
                 {
-                    animator.SetFloat("Horizontal", movementDirection.x);
-                    animator.SetFloat("Vertical", movementDirection.y);
+                    // Se o jogador estiver se movendo, ativar o parâmetro "IsMoving"
+                    animator.SetBool("IsMoving", true);
+                    Debug.Log("IsMoving setado como true");
+                }
+                else
+                {
+                    // Se o jogador não estiver se movendo, desativar o parâmetro "IsMoving"
+                    animator.SetBool("IsMoving", false);
+                    Debug.Log("IsMoving setado como false");
                 }
 
                 // Verificar se o jogador está dentro do raio de ataque
@@ -57,15 +64,18 @@ public class Bombinha : MonoBehaviour
 
     void MoveTowardsPlayer(float distanceToPlayer)
     {
-        // Ativar animação de movimento
-        if (distanceToPlayer > attackRadius) // Se o jogador não estiver dentro do raio de ataque
-            animator.SetFloat("Speed", speed / distanceToPlayer);
-
-        // Se o jogador estiver dentro do campo de visão, perseguir o jogador
         movementDirection = (player.position - transform.position).normalized;
+
+        if (distanceToPlayer > attackRadius)
+        {
+            // Configuração do Blend Tree
+            float angle = Vector2.SignedAngle(Vector2.up, movementDirection);
+            animator.SetFloat("Direction", angle / 180f); // Normalizar o ângulo entre -1 e 1
+            animator.SetFloat("Speed", speed / distanceToPlayer);
+        }
+
         transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
     }
-
     IEnumerator AttackTimer()
     {
         // Ativar animação de carga do ataque
