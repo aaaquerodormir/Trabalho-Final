@@ -14215,6 +14215,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 188194157283336460, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 520124562324578415, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 520124562324578415, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 520124562324578415, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 937137285274706994, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 282.6095
+      objectReference: {fileID: 0}
+    - target: {fileID: 937137285274706994, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 53.2064
+      objectReference: {fileID: 0}
+    - target: {fileID: 937137285274706994, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 937137285274706994, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 140
+      objectReference: {fileID: 0}
     - target: {fileID: 1868485214502439156, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -14299,6 +14331,10 @@ PrefabInstance:
       propertyPath: PanelGameOver
       value: 
       objectReference: {fileID: 768077304}
+    - target: {fileID: 4935438557290018756, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5878314748871339635, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -14315,6 +14351,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RestartGame
       objectReference: {fileID: 0}
+    - target: {fileID: 6059055478591750617, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6846431112828977033, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
       propertyPath: m_Name
       value: Canvas (1)
@@ -14326,6 +14366,18 @@ PrefabInstance:
     - target: {fileID: 7834527632539344045, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Sair
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298461429614754826, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298461429614754826, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369577956356006961, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8640176878641471714, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

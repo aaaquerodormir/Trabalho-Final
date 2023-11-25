@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 using UnityEngine.UI;
@@ -22,19 +23,42 @@ public class Configuraçoes : MonoBehaviour
 
     private void OnEnable()
     {
+        // Obtenha todas as resoluções suportadas pelo sistema
         resolutions = Screen.resolutions;
-        foreach (Resolution reso in resolutions)
+
+        // Limpe as opções do Dropdown
+        resolutionDropdown.ClearOptions();
+
+        // Filtrar as resoluções para as 5 mais utilizadas em jogos pixel art 2D
+        var filteredResolutions = GetTopResolutions(resolutions, 5);
+
+        // Adicionar as resoluções ao Dropdown
+        foreach (Resolution reso in filteredResolutions)
         {
             resolutionDropdown.options.Add(new Dropdown.OptionData(reso.ToString()));
         }
 
-        // o chamado das funções
+        // Chame as funções
         fullScreenToogle.onValueChanged.AddListener(delegate { OnFullScreenToggle(); });
         resolutionDropdown.onValueChanged.AddListener(delegate { OnResolutionChange(); });
         qualityTextureDropdown.onValueChanged.AddListener(delegate { OnTextureQualityChange(); });
         musicVolumeSlider.onValueChanged.AddListener(delegate { OnMusicVolumeChange(); });
     }
-    void Start()
+
+    // ...
+
+    // Função para obter as top N resoluções mais utilizadas
+    private Resolution[] GetTopResolutions(Resolution[] allResolutions, int topCount)
+    {
+        // Classifique as resoluções pelo número total de pixels (width * height) em ordem decrescente
+        var sortedResolutions = allResolutions.OrderByDescending(res => res.width * res.height).ToArray();
+
+        // Pegue as primeiras topCount resoluções
+        var topResolutions = sortedResolutions.Take(topCount).ToArray();
+
+        return topResolutions;
+    }
+        void Start()
     {
         
     }
