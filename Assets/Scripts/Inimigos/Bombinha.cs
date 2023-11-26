@@ -68,9 +68,20 @@ public class Bombinha : MonoBehaviour
 
         if (distanceToPlayer > attackRadius)
         {
-            // Configuração do Blend Tree
+            // Use LookAt para orientar o inimigo na direção do jogador
+            transform.LookAt(player.position);
+
+            // Calcula o ângulo entre o vetor up e a direção do movimento
             float angle = Vector2.SignedAngle(Vector2.up, movementDirection);
-            animator.SetFloat("Direction", angle / 180f); // Normalizar o ângulo entre -1 e 1
+
+            // Normaliza o ângulo entre -180 e 180
+            if (angle < 0)
+            {
+                angle += 360f;
+            }
+
+            // Configuração do Blend Tree
+            animator.SetFloat("Direction", angle / 180f);
             animator.SetFloat("Speed", speed / distanceToPlayer);
         }
 

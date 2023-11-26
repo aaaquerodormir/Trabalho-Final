@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 918104329287212213}
   - component: {fileID: 6819038365991644966}
   - component: {fileID: 3377467744422139718}
+  - component: {fileID: 1936888102074472417}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -159,7 +160,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0024863183, y: -0.0024864003}
+  m_Offset: {x: 0.0079616755, y: -0.009451754}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -170,5 +171,26 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4480465, y: 0.31876296}
+  m_Size: {x: 0.4689425, y: 0.2769701}
   m_EdgeRadius: 0
+--- !u!95 &1936888102074472417
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7106782229104072231}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 040790251dab3cc43b8c74fa209f2ee6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

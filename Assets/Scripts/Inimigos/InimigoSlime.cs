@@ -38,15 +38,19 @@ public class InimigoSlime : MonoBehaviour
     private float intervaloEntreAtaques;
     private float tempoEsperaProximoAtaque;
 
+    // Novo booleano para controle de animação de ataque
+    [SerializeField]
+    private bool atacando;
 
     private void Start()
     {
         this.tempoEsperaProximoAtaque = this.intervaloEntreAtaques;
     }
+
     private void Update()
     {
         ProcurarJogador();
-        if(this.alvo != null)
+        if (this.alvo != null)
         {
             Mover();
             VerificarPossibilidadeAtaque();
@@ -55,32 +59,56 @@ public class InimigoSlime : MonoBehaviour
         {
             PararMovimentacao();
         }
+
+        // Atualiza o bool 'atacando' no Animator
+        this.animator.SetBool("Atacando", this.atacando);
     }
+
     private void VerificarPossibilidadeAtaque()
     {
-        float distancia = Vector3.Distance(this.transform.position, this.alvo.position);
-        if (distancia <= this.distanciaMaximaAtaque)
+        if (this.alvo != null)
         {
-            this.tempoEsperaProximoAtaque -= Time.deltaTime;
-            if(this.tempoEsperaProximoAtaque <= 0) {
-                this.tempoEsperaProximoAtaque = this.intervaloEntreAtaques;
-                Atacar();
+            float distancia = Vector3.Distance(this.transform.position, this.alvo.position);
+            if (distancia <= this.distanciaMaximaAtaque)
+            {
+                if (!this.atacando)
+                {
+                    this.tempoEsperaProximoAtaque -= Time.deltaTime;
+                    if (this.tempoEsperaProximoAtaque <= 0)
+                    {
+                        this.tempoEsperaProximoAtaque = this.intervaloEntreAtaques;
+                        IniciarAtaque();
+                    }
+                }
+            }
+            else
+            {
+                // Se estiver fora da distância de ataque, retorne para o estado "Andando"
+                this.atacando = false;
             }
         }
     }
 
+    private void IniciarAtaque()
+    {
+        this.atacando = true;
+    }
+
     private void Atacar()
     {
-        this.animator.SetTrigger("atacando");
         MiroHp miroHp = alvo.GetComponent<MiroHp>();
         miroHp.TakeDamage(0);
+
+        // Reinicia o booleano para false após o ataque
+        this.atacando = false;
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(this.transform.position, this.raioVisao);
-        if(this.alvo != null) {
-            Gizmos.DrawLine(this.transform.position, this.alvo.position); 
+        if (this.alvo != null)
+        {
+            Gizmos.DrawLine(this.transform.position, this.alvo.position);
         }
     }
 
@@ -94,25 +122,34 @@ public class InimigoSlime : MonoBehaviour
             Vector2 direcao = posicaoAlvo - posicaoAtual;
             direcao = direcao.normalized;
 
-            RaycastHit2D hit = Physics2D.Raycast(posicaoAtual, direcao);
-            if (hit.transform != null) //Encontrou obj
-            { if (hit.transform.CompareTag("Player")) { // Obj possui a tag jogador
-                    // define o jogador como alvo
-                    this.alvo = hit.transform;
-               }
-                else{ //Encontrou outro obj q nn é o jogador
-                    //Jogador dentro da area de visao,
-                    //mas nao pode ser visto,
-                    //Existe algo entre eles.
-                    this.alvo = null;
-                }
+            // Adiciona Debug.DrawRay para visualizar o raio no Editor
+            Debug.Log("Direcao: " + direcao);
+            Debug.DrawRay(posicaoAtual, direcao * this.raioVisao, Color.green);
 
+            RaycastHit2D hit = Physics2D.Raycast(posicaoAtual, direcao);
+            if (hit.transform != null)
+            {
+                if (hit.transform.CompareTag("Player"))
+                {
+                    this.alvo = hit.transform;
+                    Debug.Log("Player Detectado");
+                }
+                else
+                {
+                    this.alvo = null;
+                    Debug.Log("Outro Objeto Detectado");
+                }
             }
-            else {// Nenhum obj encontrado na direcao do inimigo
+            else
+            {
                 this.alvo = null;
+                Debug.Log("Nenhum Objeto Encontrado na Direção do Inimigo");
             }
-        } else{
+        }
+        else
+        {
             this.alvo = null;
+            Debug.Log("Nenhum Colisor Encontrado na Área de Visão");
         }
     }
 
@@ -122,18 +159,19 @@ public class InimigoSlime : MonoBehaviour
         Vector2 posicaoAtual = this.transform.position;
 
         float distancia = Vector2.Distance(posicaoAtual, posicaoAlvo);
-        if(distancia >= this.distanciaMinima)
+        if (distancia >= this.distanciaMinima)
         {
-            //mover o inimigo
             Vector2 direcao = posicaoAlvo - posicaoAtual;
             direcao = direcao.normalized;
 
             this.rigidbody.velocity = (this.velocidadeMovimento * direcao);
-            
-            if(this.rigidbody.velocity.x > 0)
+
+            if (this.rigidbody.velocity.x > 0)
             {
                 this.spriteRenderer.flipX = false;
-            } else if (this.rigidbody.velocity.x < 0) { 
+            }
+            else if (this.rigidbody.velocity.x < 0)
+            {
                 this.spriteRenderer.flipX = true;
             }
             this.animator.SetBool("movendo", true);

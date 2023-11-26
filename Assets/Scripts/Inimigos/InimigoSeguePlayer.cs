@@ -24,12 +24,15 @@ public class InimigoSeguePlayer : MonoBehaviour
     public float health;
 
     public int damage;
+    private bool isDead = false;
+    private Animator animator;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         healthBarScale = healthBar.localScale;
         healthPercent = healthBarScale.x / health;
         damage = 5;
+        animator = GetComponent<Animator>();
     }
 
     void UpdateHealthBar()
@@ -41,16 +44,6 @@ public class InimigoSeguePlayer : MonoBehaviour
     
     void Update()
     {
-        /* float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
-         if (distanceFromPlayer < campoDeVisao && distanceFromPlayer > distanciaTiro)
-         {
-             transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed * Time.deltaTime);
-         }
-         else if (distanceFromPlayer <= distanciaTiro && nextFireTime < Time.time)
-         {
-             Instantiate(bullet, bulletParent.transform.position, Quaternion.identity);
-             nextFireTime = Time.time + fireRate;
-         } */
 
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
 
@@ -64,11 +57,30 @@ public class InimigoSeguePlayer : MonoBehaviour
             // Use a posição do inimigo como ponto de origem para a bala
             Instantiate(bullet, transform.position, Quaternion.identity);
 
+            animator.SetBool("isShooting", true);
+
+            animator.SetBool("isTakingDamage", false);
+
             nextFireTime = Time.time + fireRate;
         }
 
-        if (health < 0)
+        if (health < 0 && !isDead)
         {
+            // Ative a variável de animação de morte
+            animator.SetBool("isDead", true);
+            isDead = true;
+
+            // Aguarde o término da animação de morte antes de destruir o objeto
+            StartCoroutine(DestroyAfterAnimation());
+        }
+
+
+        IEnumerator DestroyAfterAnimation()
+        {
+            // Aguarde o término da animação de morte
+            yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+
+            // Destrua o objeto
             Destroy(gameObject);
         }
 
@@ -87,6 +99,11 @@ public class InimigoSeguePlayer : MonoBehaviour
         {
             health -= damage;
             UpdateHealthBar();
+
+            animator.SetBool("isTakingDamage", true);
+
+            animator.SetBool("isShooting", false);
+
         }
     }
 

@@ -14,71 +14,58 @@ public class Configuraçoes : MonoBehaviour
     public float    musicVolume;
 
     //Objetos
-    public Toggle fullScreenToogle;
+    public Toggle fullScreenToggle;
     public Dropdown resolutionDropdown;
     public Dropdown qualityTextureDropdown;
     public Slider musicVolumeSlider;
 
-    public Resolution[] resolutions;
+    private List<Resolution> customResolutions = new List<Resolution>
+    {
+        new Resolution { width = 1920, height = 1080 },
+        new Resolution { width = 1600, height = 1200 },
+        new Resolution { width = 1600, height = 900 }
+        // Adicione mais resoluções, se necessário
+    };
 
     private void OnEnable()
     {
-        // Obtenha todas as resoluções suportadas pelo sistema
-        resolutions = Screen.resolutions;
-
         // Limpe as opções do Dropdown
         resolutionDropdown.ClearOptions();
 
-        // Filtrar as resoluções para as 5 mais utilizadas em jogos pixel art 2D
-        var filteredResolutions = GetTopResolutions(resolutions, 5);
+        // Crie uma lista de strings para armazenar as opções do Dropdown
+        var resolutionOptions = new List<string>();
 
-        // Adicionar as resoluções ao Dropdown
-        foreach (Resolution reso in filteredResolutions)
+        // Adicione as resoluções customizadas à lista de opções e ao Dropdown
+        foreach (Resolution reso in customResolutions)
         {
-            resolutionDropdown.options.Add(new Dropdown.OptionData(reso.ToString()));
+            resolutionOptions.Add(reso.ToString());
         }
 
+        // Adicione as opções ao Dropdown
+        resolutionDropdown.AddOptions(resolutionOptions);
+
         // Chame as funções
-        fullScreenToogle.onValueChanged.AddListener(delegate { OnFullScreenToggle(); });
+        fullScreenToggle.onValueChanged.AddListener(delegate { OnFullScreenToggle(); });
         resolutionDropdown.onValueChanged.AddListener(delegate { OnResolutionChange(); });
         qualityTextureDropdown.onValueChanged.AddListener(delegate { OnTextureQualityChange(); });
         musicVolumeSlider.onValueChanged.AddListener(delegate { OnMusicVolumeChange(); });
     }
 
-    // ...
-
-    // Função para obter as top N resoluções mais utilizadas
-    private Resolution[] GetTopResolutions(Resolution[] allResolutions, int topCount)
-    {
-        // Classifique as resoluções pelo número total de pixels (width * height) em ordem decrescente
-        var sortedResolutions = allResolutions.OrderByDescending(res => res.width * res.height).ToArray();
-
-        // Pegue as primeiras topCount resoluções
-        var topResolutions = sortedResolutions.Take(topCount).ToArray();
-
-        return topResolutions;
-    }
-        void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // Restante do seu código...
 
     public void OnFullScreenToggle()
     {
-        Screen.fullScreen = fullScreenToogle.isOn;
+        Screen.fullScreen = fullScreenToggle.isOn;
         OnResolutionChange();
     }
 
     public void OnResolutionChange()
     {
-        Screen.SetResolution(resolutions[resolutionDropdown.value].width, resolutions[resolutionDropdown.value].height, fullScreenToogle.isOn);
+        Resolution selectedResolution = customResolutions[resolutionDropdown.value];
+        Screen.SetResolution(selectedResolution.width, selectedResolution.height, fullScreenToggle.isOn);
     }
+
+    
 
     public void OnTextureQualityChange()
     {
