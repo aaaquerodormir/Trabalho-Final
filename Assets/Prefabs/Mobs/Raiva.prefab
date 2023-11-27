@@ -186,7 +186,7 @@ MonoBehaviour:
   speed: 1.2
   visionRadius: 2.25
   attackRadius: 1.1
-  attackDelay: 5
+  attackDelay: 2
   damage: 7
   animator: {fileID: 1874624489743486365}
   distanciaMinima: 0.5

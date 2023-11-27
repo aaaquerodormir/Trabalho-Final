@@ -86,60 +86,43 @@ public class Bombinha : MonoBehaviour
         else
         {
             // Caso contrário, continuar com a movimentação normal
-            movementDirection = (player.position - transform.position).normalized;
+            Vector3 deltaPos = player.position - transform.position;
+            movementDirection = new Vector2(deltaPos.x, deltaPos.y).normalized;
 
             float angle = Vector2.SignedAngle(Vector2.up, movementDirection);
-
-            if (angle < 0)
-            {
-                angle += 360f;
-            }
-
-            string animationName = GetAnimationName(angle);
-
-            animator.CrossFade(animationName, 0);
+            string animationName = GetAnimationName(movementDirection);
+            Debug.Log(animationName);
+            //animator.CrossFade(animationName, 0);
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
 
-            animator.SetFloat("Direction", angle / 180f);
-            animator.SetFloat("Speed", speed / distanceToPlayer);
+            animator.SetFloat("DirectionX", movementDirection.x);
+            animator.SetFloat("DirectionY", movementDirection.y);
         }
     }
-    string GetAnimationName(float angle)
+    string GetAnimationName(Vector2 normalizedDirection)
     {
-        Debug.Log("Angle: " + angle); // Adicione esta linha para verificar o ângulo
-
-        if (angle >= 135f & angle < 45f)
+        if (normalizedDirection.magnitude == 0) return "Raiva_Idle";
+        else if (Mathf.Abs(normalizedDirection.x) >= Mathf.Abs(normalizedDirection.y))
         {
-            return "Raiva_Cima";
+            if (normalizedDirection.x > 0) return "Raiva_Direita";
+            else return "Raiva_Esquerda";
         }
-
-        if (angle >= 225f & angle < 135f)
+        else
         {
-            return "Raiva_Esquerda";
-        }
-
-        if (angle >= 315f & angle < 225f)
-        {
+            if (normalizedDirection.y > 0) return "Raiva_Cima";
             return "Raiva_Baixo";
         }
-
-        if (angle >= 45f & angle < 315f)
-        {
-            return "Raiva_Direita";
-        }
-        return "Raiva_Idle";
     }
-
     IEnumerator AttackTimer()
     {
         animator.SetTrigger("AttackCharge");
         yield return new WaitForSeconds(attackDelay);
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
+        animator.SetTrigger("AttackRelease");
+        yield return new WaitForSeconds(1.33f);
         if (distanceToPlayer < attackRadius)
         {
-            animator.SetTrigger("AttackRelease");
             DealDamage();
         }
 

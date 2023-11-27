@@ -31,8 +31,7 @@ public class Passcode : MonoBehaviour
     {
         if(Nr == Code)
         {
-            Casa.Abriu();
-            passardetela.SetActive(true);
+            
             levelLoader.Transition(SceneName);
         }
     }
