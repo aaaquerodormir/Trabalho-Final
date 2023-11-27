@@ -28,6 +28,7 @@ public class Menu : MonoBehaviour
     public void PlayGame()
     {
         MyLoading.LoadLevel("Floresta");
+        PlayerPrefs.DeleteAll();
     }
 
 }

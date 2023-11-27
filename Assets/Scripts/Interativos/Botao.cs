@@ -23,7 +23,8 @@ public class Botao : MonoBehaviour
         if (collision.gameObject.tag == "Caixa")
         {
             anim.SetBool("Botao", true);
-            pisou = true; 
+            pisou = true;
+            Casa.Abriu();
         }
     }
 

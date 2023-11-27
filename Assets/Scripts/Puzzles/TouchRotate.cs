@@ -11,6 +11,6 @@ public class TouchRotate : MonoBehaviour
         {
             transform.Rotate(0f, 0f, 90f);
         }
-
+        
     }
 }

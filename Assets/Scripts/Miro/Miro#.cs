@@ -259,6 +259,28 @@ public class Miro : MonoBehaviour
             anim.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("AnimatorControllers/DeadMiro1");
         }
 
+        if (nomeCenaAtual == "Casa")
+        {
+
+            anim.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("AnimatorControllers/Miro1");
+        }
+        else if (nomeCenaAtual == "Casa--")
+        {
+
+            anim.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("AnimatorControllers/DeadMiro1");
+        }
+
+        if (nomeCenaAtual == "Inside")
+        {
+
+            anim.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("AnimatorControllers/Miro1");
+        }
+        else if (nomeCenaAtual == "Inside--")
+        {
+
+            anim.runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("AnimatorControllers/DeadMiro1");
+        }
+
     }
 }
 

@@ -1601,7 +1601,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 0.8
+  orthographic size: 2.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -33988,6 +33988,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 130
       objectReference: {fileID: 0}
+    - target: {fileID: 8408376532789997527, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 89a37d2d4ca19644ab97a9205a6a8315, type: 3}
     - target: {fileID: 8640176878641471714, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -34002,7 +34006,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
 --- !u!1 &7126981365631983610 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8520319566609746137, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7595984019878538831, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
   m_PrefabInstance: {fileID: 7126981365631983609}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7725498770216952974

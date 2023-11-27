@@ -8,6 +8,8 @@ public class Casa : MonoBehaviour
     
     static Animator animator;
 
+    [SerializeField]
+    public static GameObject passar;
     
 
     private void Start()
@@ -26,7 +28,8 @@ public class Casa : MonoBehaviour
         if (animator != null)
         {
             // Defina o parâmetro "Aberta" para true para acionar a animação de abertura
-            animator.SetBool("abriu", true);
+            animator.SetBool("abriu", true); 
+            passar.SetActive(true);
         }
         else
         {
