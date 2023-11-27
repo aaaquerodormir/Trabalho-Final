@@ -4,24 +4,26 @@ using UnityEngine;
 
 public class Bombinha : MonoBehaviour
 {
-    public float speed = 3f; // Velocidade de movimento do inimigo
-    public float visionRadius = 5f; // Raio de visão do inimigo
-    public float attackRadius = 1f; // Raio de ataque do inimigo
-    public float attackDelay = 3f; // Tempo de atraso antes de ativar o ataque
-    public float damage = 7f; // Quantidade de dano a ser causada
+    public float speed = 3f;
+    public float visionRadius = 5f;
+    public float attackRadius = 1f;
+    public float attackDelay = 3f;
+    public float damage = 7f;
 
     public Animator animator;
     private Vector2 movementDirection = Vector2.zero;
 
-    private Transform player; // Referência ao transform do jogador
+    private Transform player;
     private bool hasAttacked = false;
 
     [SerializeField]
     private float distanciaMinima;
 
+    private bool hasEnteredAttackArea = false;
+
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform; // Encontrar o jogador pela tag
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
     }
 
@@ -31,23 +33,19 @@ public class Bombinha : MonoBehaviour
         {
             float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-            // Verificar se o jogador está dentro do campo de visão
             if (distanceToPlayer < visionRadius && distanceToPlayer > distanciaMinima)
             {
                 if (movementDirection != Vector2.zero)
                 {
-                    // Se o jogador estiver se movendo, ativar o parâmetro "IsMoving"
                     animator.SetBool("IsMoving", true);
                     Debug.Log("IsMoving setado como true");
                 }
                 else
                 {
-                    // Se o jogador não estiver se movendo, desativar o parâmetro "IsMoving"
                     animator.SetBool("IsMoving", false);
                     Debug.Log("IsMoving setado como false");
                 }
 
-                // Verificar se o jogador está dentro do raio de ataque
                 if (distanceToPlayer < attackRadius)
                 {
                     StartCoroutine(AttackTimer());
@@ -55,62 +53,97 @@ public class Bombinha : MonoBehaviour
                 }
                 else
                 {
-                    // Se o jogador estiver dentro do campo de visão, perseguir o jogador
                     MoveTowardsPlayer(distanceToPlayer);
                 }
+            }
+            else
+            {
+                animator.SetBool("IsMoving", false);
             }
         }
     }
 
     void MoveTowardsPlayer(float distanceToPlayer)
     {
-        movementDirection = (player.position - transform.position).normalized;
-
-        if (distanceToPlayer > attackRadius)
+        if (!hasEnteredAttackArea && distanceToPlayer < attackRadius)
         {
-            // Use LookAt para orientar o inimigo na direção do jogador
-            transform.LookAt(player.position);
+            float savedSpeed = speed;
+            Vector2 savedMovementDirection = movementDirection;
 
-            // Calcula o ângulo entre o vetor up e a direção do movimento
+            // Se o jogador estiver dentro do raio de ataque pela primeira vez, ativar movimentação carregada
+            animator.SetBool("IsChargedMovement", true);
+            animator.SetBool("IsNormalMovement", false);
+
+            // Restaura a direção e a velocidade para a movimentação normal
+            movementDirection = savedMovementDirection;
+            speed = savedSpeed;
+
+            hasEnteredAttackArea = true;
+
+            // Se quiser manter a lógica de ataque, inclua aqui a chamada para a lógica de ataque
+            StartCoroutine(AttackTimer());
+        }
+        else
+        {
+            // Caso contrário, continuar com a movimentação normal
+            movementDirection = (player.position - transform.position).normalized;
+
             float angle = Vector2.SignedAngle(Vector2.up, movementDirection);
 
-            // Normaliza o ângulo entre -180 e 180
             if (angle < 0)
             {
                 angle += 360f;
             }
 
-            // Configuração do Blend Tree
+            string animationName = GetAnimationName(angle);
+
+            animator.CrossFade(animationName, 0);
+            transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+
             animator.SetFloat("Direction", angle / 180f);
             animator.SetFloat("Speed", speed / distanceToPlayer);
         }
-
-        transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
     }
+    string GetAnimationName(float angle)
+    {
+        Debug.Log("Angle: " + angle); // Adicione esta linha para verificar o ângulo
+
+        if (angle >= 135f & angle < 45f)
+        {
+            return "Raiva_Cima";
+        }
+
+        if (angle >= 225f & angle < 135f)
+        {
+            return "Raiva_Esquerda";
+        }
+
+        if (angle >= 315f & angle < 225f)
+        {
+            return "Raiva_Baixo";
+        }
+
+        if (angle >= 45f & angle < 315f)
+        {
+            return "Raiva_Direita";
+        }
+        return "Raiva_Idle";
+    }
+
     IEnumerator AttackTimer()
     {
-        // Ativar animação de carga do ataque
         animator.SetTrigger("AttackCharge");
-
-        // Aguardar o tempo de atraso antes de ativar o ataque
         yield return new WaitForSeconds(attackDelay);
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        // Verificar se o jogador ainda está dentro do raio de ataque antes de atacar
         if (distanceToPlayer < attackRadius)
         {
-            // Ativar animação de liberação do ataque
             animator.SetTrigger("AttackRelease");
-
-            // Ativar o colisor ou a lógica de dano aqui
             DealDamage();
         }
 
-        // Marcador de que o inimigo já atacou, para evitar ataques repetidos
         hasAttacked = true;
-
-        // Destruir o inimigo após o ataque
         Destroy(gameObject);
     }
 
@@ -122,11 +155,9 @@ public class Bombinha : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        // Visualizar o raio de visão
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, visionRadius);
 
-        // Visualizar o raio de ataque
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRadius);
 
@@ -136,7 +167,6 @@ public class Bombinha : MonoBehaviour
 
     void OnDrawGizmosSelected()
     {
-        // Visualizar o raio de ataque quando o objeto estiver selecionado
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRadius);
     }

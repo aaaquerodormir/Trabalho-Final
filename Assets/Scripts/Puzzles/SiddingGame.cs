@@ -13,6 +13,8 @@ public class SiddingGame : MonoBehaviour
     private bool isMinigameOpen = false;
     private bool isMouseOverMinigame = false;
 
+    public bool playerIsClose;
+
     private void OnEnable()
     {
         highlight = transform.GetChild(0).gameObject;
@@ -23,14 +25,19 @@ public class SiddingGame : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             highlight.SetActive(true);
+            playerIsClose = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        
+
         if (other.CompareTag("Player"))
         {
             highlight.SetActive(false);
+            playerIsClose = false;
+            
         }
     }
 
@@ -48,35 +55,51 @@ public class SiddingGame : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero, Mathf.Infinity, OtherSide);
+        /* if (Input.GetMouseButtonDown(0))
+         {
+             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+             RaycastHit2D hit = Physics2D.Raycast(mousePosition, Vector2.zero, Mathf.Infinity, OtherSide);
 
-            if (hit.collider != null)
+             if (hit.collider != null)
+             {
+                 if (hit.collider == targetObject.GetComponent<Collider2D>())
+                 {
+                     if (!isMinigameOpen)
+                     {
+                         PlayMiniGame();
+                     }
+                 }
+                 // Adicione verificação para ver se o mouse está sobre o minigame.
+                 else if (hit.collider == minigame.GetComponent<Collider2D>())
+                 {
+                     isMouseOverMinigame = true;
+                 }
+             }
+             else
+             {
+                 if (isMinigameOpen && !isMouseOverMinigame)
+                 {
+                     CloseMiniGame();
+                 }
+                 // Redefina a variável isMouseOverMinigame.
+                 isMouseOverMinigame = false;
+             }
+         }
+        */
+
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose/* && !teclaIPressionadaNoColisor*/)
+        {
+            if (!isMinigameOpen)
             {
-                if (hit.collider == targetObject.GetComponent<Collider2D>())
-                {
-                    if (!isMinigameOpen)
-                    {
-                        PlayMiniGame();
-                    }
-                }
-                // Adicione verificação para ver se o mouse está sobre o minigame.
-                else if (hit.collider == minigame.GetComponent<Collider2D>())
-                {
-                    isMouseOverMinigame = true;
-                }
+                PlayMiniGame();
+                
             }
             else
             {
-                if (isMinigameOpen && !isMouseOverMinigame)
-                {
-                    CloseMiniGame();
-                }
-                // Redefina a variável isMouseOverMinigame.
-                isMouseOverMinigame = false;
+                CloseMiniGame();
+                
             }
+
         }
     }
 }

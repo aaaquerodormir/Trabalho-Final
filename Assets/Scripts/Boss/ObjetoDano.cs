@@ -6,14 +6,15 @@ public class ObjetoDano : MonoBehaviour
 {
     public int maxHealth = 20; // Vida máxima do objeto
     private int currentHealth;
-
     
-
+    public Animator animator;
+    private bool isDead = false;
     public string bossTag = "Boss"; // Tag do boss na Unity
 
     void Start()
     {
         currentHealth = maxHealth;
+        animator = GetComponent<Animator>();
   
     }
 
@@ -29,6 +30,10 @@ public class ObjetoDano : MonoBehaviour
             if (currentHealth <= 0)
             {
                 CauseDamageToBoss();
+                animator.SetTrigger("DestroyTrigger");  
+                isDead = true;
+                StartCoroutine(DestroyAfterAnimation());
+
             }
         }
     }
@@ -38,13 +43,12 @@ public class ObjetoDano : MonoBehaviour
         // Coloque aqui a lógica para causar dano ao objeto
         currentHealth -= 5; // Exemplo de redução de 1 de vida
 
-        // Atualize a barra de vida do objeto
-        UpdateHealthBar();
-
         // Verifique se o objeto ainda tem vida
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !isDead)
         {
-            Die();
+            isDead = true;
+
+            StartCoroutine(DestroyAfterAnimation());
         }
     }
 
@@ -59,7 +63,7 @@ public class ObjetoDano : MonoBehaviour
             BossLife bossLife = boss.GetComponent<BossLife>();
             if (bossLife != null)
             {
-                bossLife.TakeDamage(10); // Exemplo de causar 10 de dano ao boss
+                bossLife.TakeDamage(50); // Exemplo de causar 10 de dano ao boss
             }
             else
             {
@@ -72,17 +76,16 @@ public class ObjetoDano : MonoBehaviour
         }
     }
 
-    void Die()
+    IEnumerator DestroyAfterAnimation()
     {
-        // Adicione aqui qualquer lógica adicional que desejar quando o objeto morrer
-        Debug.Log("Objeto morreu!");
+
+        // Aguarde o término da animação de morte
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+
+        // Causa dano ao boss após a animação
+        
+
+        // Destrua o objeto
         Destroy(gameObject);
     }
-
-    void UpdateHealthBar()
-    {
-        // Adicione aqui qualquer lógica para atualizar a barra de vida do objeto
-        // Por exemplo, você pode querer usar uma barra de vida UI ou outro método de visualização
-    }
-
 }

@@ -21,10 +21,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu/Controles.unity
     guid: 04a90a78fea54c94bbbdb4f6d6efa962
   - enabled: 1
-    path: Assets/Scenes/Floresta.unity
+    path: Assets/Scenes/Passado/Floresta--.unity
     guid: c49aeaae180eb064283a2b6b107e0133
   - enabled: 1
-    path: Assets/Scenes/Passado/Floresta--.unity
+    path: Assets/Scenes/Passado/REVER PARA EXCLUIR/-----.unity
     guid: d0e6461faec6561418e8d2d620409b10
   - enabled: 1
     path: Assets/Scenes/Labirinto.unity

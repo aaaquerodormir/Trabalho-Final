@@ -17,6 +17,9 @@ public class Passcode : MonoBehaviour
 
     public GameObject passardetela;
 
+    public LevelLoader levelLoader;
+    public string SceneName;
+
     public void CodeFunction(string Numbers)
     {
         NrIndex++;
@@ -30,6 +33,7 @@ public class Passcode : MonoBehaviour
         {
             Casa.Abriu();
             passardetela.SetActive(true);
+            levelLoader.Transition(SceneName);
         }
     }
 

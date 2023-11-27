@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1874624489743486365}
   - component: {fileID: 900624056681211191}
   - component: {fileID: 5265561230540526212}
+  - component: {fileID: 5000742092896425145}
   m_Layer: 0
   m_Name: Raiva
   m_TagString: Untagged
@@ -170,3 +171,22 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0012073937, y: -0.35097137}
   m_Size: {x: 0.5296313, y: 0.1967515}
   m_Direction: 1
+--- !u!114 &5000742092896425145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3164447598327547499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3fe1b8ecd04c4a45a767d04eeb9fb77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.2
+  visionRadius: 2.25
+  attackRadius: 1.1
+  attackDelay: 5
+  damage: 7
+  animator: {fileID: 1874624489743486365}
+  distanciaMinima: 0.5
