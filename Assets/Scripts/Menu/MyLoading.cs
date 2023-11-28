@@ -16,7 +16,7 @@ public class MyLoading : MonoBehaviour
     {
         operation = SceneManager.LoadSceneAsync(level);
         operation.allowSceneActivation = false;
-        Invoke("AllowScene", 1);
+        Invoke("AllowScene", 0);
     }
 
     void AllowScene()
