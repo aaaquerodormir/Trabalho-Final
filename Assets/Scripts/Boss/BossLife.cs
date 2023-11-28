@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class BossLife : MonoBehaviour
 {
-    public int maxHealth = 40;
-    public int currentHealth;
+    private int maxHealth = 40;
+    private int currentHealth;
     public Image healthBar;
 
 
@@ -19,7 +19,8 @@ public class BossLife : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        healthBar.fillAmount = Mathf.Clamp(currentHealth / maxHealth, 0, 1);
+        healthBar.fillAmount = Mathf.Clamp(currentHealth / (float)maxHealth, 0, 1);
+        Debug.Log("Health Bar Fill Amount: " + healthBar.fillAmount); // Adicione este log
         // Verifique se o boss ainda tem vida
         if (currentHealth <= 0)
         {
@@ -35,6 +36,13 @@ public class BossLife : MonoBehaviour
         }
 
         Destroy(gameObject);
+    }
+
+
+    public void SetMaxHealth()
+    {
+        currentHealth = maxHealth;
+        healthBar.fillAmount = 1f;
     }
     //public void DestroyBoss()
     //{
