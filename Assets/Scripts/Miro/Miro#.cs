@@ -43,9 +43,14 @@ public class Miro : MonoBehaviour
     public float reloadDash;
     bool InDash;
 
+
+    AudioManager audioManager;
+
+
     private void Awake()
     {
         AtualizarAnimatorDeAcordoComCena();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
     void Start()
     {
@@ -55,6 +60,7 @@ public class Miro : MonoBehaviour
         temColetavel = false;
         Backpack = false;
         speedAtual = speed;
+        
     }
 
     
@@ -80,6 +86,7 @@ public class Miro : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.LeftShift) && movPlayer != Vector2.zero && InDash == false)
         {
+            audioManager.PlaySFX(audioManager.dash);
             InDash = true;
             speedAtual = speedDash;
             Invoke("PosDash", 0.1f);
@@ -92,7 +99,9 @@ public class Miro : MonoBehaviour
 
         if(Input.GetButtonDown("Interage"))
          {
-             EstaInteragindo = true;
+
+            audioManager.PlaySFX(audioManager.interacao);
+            EstaInteragindo = true;
 
          }
          else
@@ -102,6 +111,8 @@ public class Miro : MonoBehaviour
 
         if (Input.GetButtonDown("Inventário"))
         {
+            audioManager.PlaySFX(audioManager.inventario);
+
             if (Backpack == false)
             {
                 mochila.SetActive(true);
@@ -116,7 +127,9 @@ public class Miro : MonoBehaviour
 
         if(_isAttack)
         {
+            
             anim.SetFloat("Ataque", 2.1f);
+
         }
         if(!_isAttack) 
         {
@@ -133,8 +146,8 @@ public class Miro : MonoBehaviour
         if (Input.GetButtonDown("Fire2"))
         {
             StartCoroutine(EsperarSegundos(1f));
-            
-            
+            audioManager.PlaySFX(audioManager.viagem);
+
         }
         if (Input.GetButtonDown("Fire3"))
         {
@@ -146,36 +159,43 @@ public class Miro : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Rato"))
         {
+            audioManager.PlaySFX(audioManager.coletavel);
             Rato = true;
             Destroy(collision.gameObject);
+            
         }
 
         if (collision.gameObject.CompareTag("Bola"))
         {
+            audioManager.PlaySFX(audioManager.coletavel);
             Bola = true;
             Destroy(collision.gameObject);
         }
 
         if (collision.gameObject.CompareTag("Bing"))
         {
+            audioManager.PlaySFX(audioManager.coletavel);
             BingBong = true;
             Destroy(collision.gameObject);
         }
 
         if (collision.gameObject.CompareTag("La"))
         {
+            audioManager.PlaySFX(audioManager.coletavel);
             Ball = true;
             Destroy(collision.gameObject);
         }
 
         if (collision.gameObject.CompareTag("Vara"))
         {
+            audioManager.PlaySFX(audioManager.coletavel);
             Vara = true;
             Destroy(collision.gameObject);
         }
 
         if (collision.gameObject.CompareTag("Milk"))
         {
+            audioManager.PlaySFX(audioManager.coletavel);
             CaixaLeite = true;
             Destroy(collision.gameObject);
         }
@@ -193,6 +213,7 @@ public class Miro : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.CapsLock))
         {
+            audioManager.PlaySFX(audioManager.ataque);
             _isAttack = true;
             speed = 0;
 
@@ -202,10 +223,12 @@ public class Miro : MonoBehaviour
 
             if (valorAtaque > 0)
             {
+               
                 sprite.flipX = false; // Não inverte o sprite para a direita
             }
             else if (valorAtaque < 0)
             {
+                
                 sprite.flipX = true; // Inverte o sprite para a esquerda
             }
         }

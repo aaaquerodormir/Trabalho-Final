@@ -16,7 +16,12 @@ public class Slliding : MonoBehaviour
 
     [SerializeField] private GameObject endPanel;
 
-    // Start is called before the first frame update
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     void Start()
     {
         _camera = Camera.main;
@@ -66,6 +71,7 @@ public class Slliding : MonoBehaviour
 
         if(correctTiles == tiles.Length - 1)
         {
+            audioManager.PlaySFX(audioManager.puzzle);
             _isFinished = true;
             endPanel.SetActive(false);
         }
