@@ -20,6 +20,16 @@ public class BossAtaque : MonoBehaviour
 
     // Tempo necessário para começar a rodar a animação após o jogador estar fora do campo de visão
     public float tempoParaAnimacao = 3f;
+
+
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -36,6 +46,8 @@ public class BossAtaque : MonoBehaviour
             // Atualize o tempo fora de visão para zero se o jogador estiver dentro do campo de visão
             tempoForaDeVisao = 0;
             // Use a posição do inimigo como ponto de origem para a bala
+
+            audioManager.PlaySFX(audioManager.bossatk);
             Instantiate(bullet, transform.position, Quaternion.identity);
 
             animator.SetBool("isShooting", true);
@@ -54,6 +66,7 @@ public class BossAtaque : MonoBehaviour
             {
                 if(tempoForaDeVisao < tempoParaAnimacao + 1)
                 {
+                    audioManager.PlaySFX(audioManager.bossrindo);
                     animator.SetBool("BossRindo", true);
                 }
                 else

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TouchControl2 : MonoBehaviour
@@ -11,6 +12,8 @@ public class TouchControl2 : MonoBehaviour
     private GameObject venceu;
 
     public static bool vitoria;
+
+    
 
     void Start()
     {
@@ -37,10 +40,14 @@ public class TouchControl2 : MonoBehaviour
             fotos[14].rotation.z == 0 &&
             fotos[15].rotation.z == 0)
         {
+           
             vitoria = true;
             venceu.SetActive(true);
         }
 
     }
+    
+    
+
 }
 

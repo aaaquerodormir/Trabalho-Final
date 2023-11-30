@@ -20,7 +20,7 @@ public class NPC : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E) && playerIsClose/* && !teclaIPressionadaNoColisor*/)
+        if(Input.GetKeyDown(KeyCode.X) && playerIsClose/* && !teclaIPressionadaNoColisor*/)
         {
             if(painelDialogo.activeInHierarchy)
             {

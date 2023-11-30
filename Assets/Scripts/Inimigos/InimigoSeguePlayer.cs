@@ -76,7 +76,7 @@ public class InimigoSeguePlayer : MonoBehaviour
             nextFireTime = Time.time + fireRate;
         }
 
-        if (health < 0 && !isDead)
+        if (health <= 0 && !isDead)
         {
             // Ative a variável de animação de morte
             animator.SetBool("isDead", true);

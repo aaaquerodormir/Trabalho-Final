@@ -8635,7 +8635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3164447598327547499, guid: 493d8aa6899deed4b92766ee4e59923b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3948423561227084951, guid: 493d8aa6899deed4b92766ee4e59923b, type: 3}
       propertyPath: m_Radius
@@ -8648,6 +8648,10 @@ PrefabInstance:
     - target: {fileID: 3948423561227084951, guid: 493d8aa6899deed4b92766ee4e59923b, type: 3}
       propertyPath: m_Offset.y
       value: -0.34208125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000742092896425145, guid: 493d8aa6899deed4b92766ee4e59923b, type: 3}
+      propertyPath: speed
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 5265561230540526212, guid: 493d8aa6899deed4b92766ee4e59923b, type: 3}
       propertyPath: m_Size.x
@@ -9572,6 +9576,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6308770559426993326, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308770559426993326, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7956109771096434650, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
       propertyPath: m_Name
       value: Tristeza (3)
@@ -10127,6 +10139,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6308770559426993326, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308770559426993326, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7956109771096434650, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
       propertyPath: m_Name
       value: Tristeza (1)
@@ -24930,8 +24950,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6308770559426993326, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308770559426993326, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
       propertyPath: health
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7956109771096434650, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
       propertyPath: m_Name

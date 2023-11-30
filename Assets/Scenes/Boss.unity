@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4531670799269781437, guid: 58e74be368d22c042bdeef4a40873be0, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 5284230286207562657, guid: 9fca45ea10915bd4eb4bda8b0ccf9af7, type: 3}
     - target: {fileID: 6518257390774250474, guid: 58e74be368d22c042bdeef4a40873be0, type: 3}
       propertyPath: m_Name
       value: Boss
@@ -365,6 +369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Totem de vida do boss (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7279161675211672982, guid: 7cbaac3c256bfe44e9b97c65f7c83570, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -429,6 +437,10 @@ PrefabInstance:
     - target: {fileID: 6428749534715972321, guid: 7cbaac3c256bfe44e9b97c65f7c83570, type: 3}
       propertyPath: m_Name
       value: Totem de vida do boss (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279161675211672982, guid: 7cbaac3c256bfe44e9b97c65f7c83570, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -658,6 +670,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.07301861
       objectReference: {fileID: 0}
+    - target: {fileID: 7279161675211672982, guid: 7cbaac3c256bfe44e9b97c65f7c83570, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -722,6 +738,10 @@ PrefabInstance:
     - target: {fileID: 6428749534715972321, guid: 7cbaac3c256bfe44e9b97c65f7c83570, type: 3}
       propertyPath: m_Name
       value: Totem de vida do boss (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279161675211672982, guid: 7cbaac3c256bfe44e9b97c65f7c83570, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3398,6 +3418,10 @@ PrefabInstance:
       propertyPath: PanelGameOver
       value: 
       objectReference: {fileID: 212041675}
+    - target: {fileID: 3268523154362195599, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 960f046aa53aee541aff762a1d9f32c5, type: 3}
     - target: {fileID: 4730243295930540949, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -3414,6 +3438,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7595984019878538831, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7740253798155517179, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a5dbcaec57d8d2d46acdb41aff8f9128, type: 3}
+    - target: {fileID: 8408376532789997527, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c1c328f0e192a0e41bebab0cd9cd6d90, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7229941584550966284, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
@@ -3671,7 +3707,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 565.9326, y: 118.06735}
+  m_AnchoredPosition: {x: 565.9326, y: 137}
   m_SizeDelta: {x: 270.1347, y: 270.1347}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1598519894
@@ -4061,6 +4097,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3855996425308184497, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
+      propertyPath: sache
+      value: 
+      objectReference: {fileID: 8300000, guid: 7f262aed9af50694c846096c9c9c2b9a, type: 3}
+    - target: {fileID: 3855996425308184497, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
+      propertyPath: bossatk
+      value: 
+      objectReference: {fileID: 8300000, guid: d767348065d488046a246ce6164bdeb5, type: 3}
+    - target: {fileID: 3855996425308184497, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
+      propertyPath: bossrindo
+      value: 
+      objectReference: {fileID: 8300000, guid: 6a43257f6f6d1e1458935c716b7928fe, type: 3}
+    - target: {fileID: 3855996425308184497, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 8300000, guid: 0f70b5ad28472f64d992d5fe3f0edf85, type: 3}
     - target: {fileID: 4868410126095469877, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
       propertyPath: m_Name
       value: AudioManager

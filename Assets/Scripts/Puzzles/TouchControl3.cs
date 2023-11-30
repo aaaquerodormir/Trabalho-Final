@@ -12,6 +12,8 @@ public class TouchControl3 : MonoBehaviour
 
     public static bool alanis;
 
+    
+
     void Start()
     {
         cantou.SetActive(false);
@@ -57,6 +59,7 @@ public class TouchControl3 : MonoBehaviour
             imagens[34].rotation.z == 0 &&
             imagens[35].rotation.z == 0)
         {
+            
             alanis = true;
             cantou.SetActive(true);
         }

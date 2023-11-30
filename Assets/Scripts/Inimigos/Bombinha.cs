@@ -21,6 +21,16 @@ public class Bombinha : MonoBehaviour
 
     private bool hasEnteredAttackArea = false;
 
+
+
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -115,7 +125,9 @@ public class Bombinha : MonoBehaviour
     }
     IEnumerator AttackTimer()
     {
+        
         animator.SetTrigger("AttackCharge");
+        audioManager.PlaySFX(audioManager.bombinha);
         yield return new WaitForSeconds(attackDelay);
 
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);

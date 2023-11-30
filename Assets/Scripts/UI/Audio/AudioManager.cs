@@ -22,7 +22,11 @@ public class AudioManager : MonoBehaviour
     public AudioClip sache;
     public AudioClip tristezaid;
     public AudioClip tristezaatk;
-
+    public AudioClip medoatk;
+    public AudioClip bossrindo;
+    public AudioClip bossatk;
+    public AudioClip slime;
+    public AudioClip bombinha;
 
     private void Start()
     {

@@ -10212,6 +10212,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6308770559426993326, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308770559426993326, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7956109771096434650, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
       propertyPath: m_Name
       value: Tristeza (3)
@@ -10705,6 +10713,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6308770559426993326, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308770559426993326, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7956109771096434650, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
       propertyPath: m_Name
       value: Tristeza (1)
@@ -25970,8 +25986,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6308770559426993326, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6308770559426993326, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
       propertyPath: health
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7956109771096434650, guid: 6d921d4734ad44341a14ffddd2320342, type: 3}
       propertyPath: m_Name
@@ -34514,6 +34534,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 7f262aed9af50694c846096c9c9c2b9a, type: 3}
     - target: {fileID: 3855996425308184497, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
+      propertyPath: medoatk
+      value: 
+      objectReference: {fileID: 8300000, guid: f3cc96731c0097947a5e6a31d687cb54, type: 3}
+    - target: {fileID: 3855996425308184497, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
       propertyPath: background
       value: 
       objectReference: {fileID: 8300000, guid: 85d14914b85115346b00cdbddc1fdcda, type: 3}
@@ -34724,7 +34748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4073169195190983699, guid: ed43d032b90bf2f4189b278450a2de33, type: 3}
       propertyPath: layerDoJogador.m_Bits
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6971673438475560027, guid: ed43d032b90bf2f4189b278450a2de33, type: 3}
       propertyPath: m_LocalPosition.x

@@ -11,6 +11,15 @@ public class Medo : MonoBehaviour
     private Animator animator;
     private Collider2D currentPlayerCollider; // Adicionada uma variável para armazenar o collider do jogador atual
 
+
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
+
     void Start()
     {
         meioCirculo = GetComponent<MeioCirculo>();
@@ -30,7 +39,7 @@ public class Medo : MonoBehaviour
                 {
                     // Atualiza o collider do jogador atual
                     currentPlayerCollider = playerCollider;
-
+                    audioManager.PlaySFX(audioManager.medoatk);
                     // Atacar o jogador
                     AttackPlayer();
                     timer = 0f; // Reinicia o timer após o ataque
@@ -42,8 +51,10 @@ public class Medo : MonoBehaviour
 
 
                 }
+                
                 // Ativar a transição de idle para atacando
                 animator.SetBool("Atacando", true);
+                
             }
             else
             {
@@ -89,6 +100,7 @@ public class Medo : MonoBehaviour
 
     void AttackPlayer()
     {
+        
         // Lógica de ataque ao jogador
         MiroHp playerHealth = currentPlayerCollider.GetComponent<MiroHp>();
         if (playerHealth != null)

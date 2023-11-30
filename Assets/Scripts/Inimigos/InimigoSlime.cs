@@ -54,50 +54,69 @@ public class InimigoSlime : MonoBehaviour
         {
             Mover();
             VerificarPossibilidadeAtaque();
+            AtualizarAnimacaoAtaque();
         }
         else
         {
             PararMovimentacao();
         }
 
+        // Reduz o tempo de espera para o próximo ataque
+        this.tempoEsperaProximoAtaque -= Time.deltaTime;
+
+        // Garante que o tempo de espera não seja negativo
+        this.tempoEsperaProximoAtaque = Mathf.Max(0, this.tempoEsperaProximoAtaque);
+    }
+    private void AtualizarAnimacaoAtaque()
+    {
+        if (this.atacando && this.tempoEsperaProximoAtaque <= 0)
+        {
+            // Lógica para iniciar a animação de ataque
+            IniciarAtaque();
+            Atacar();
+
+            // Reinicia o tempo de espera para o próximo ataque
+            this.tempoEsperaProximoAtaque = this.intervaloEntreAtaques;
+        }
+
         // Atualiza o bool 'atacando' no Animator
         this.animator.SetBool("Atacando", this.atacando);
     }
-
-    private void VerificarPossibilidadeAtaque()
+        private void VerificarPossibilidadeAtaque()
     {
-        if (this.alvo != null)
+    if (this.alvo != null)
+    {
+        float distancia = Vector3.Distance(this.transform.position, this.alvo.position);
+        if (distancia <= this.distanciaMaximaAtaque)
         {
-            float distancia = Vector3.Distance(this.transform.position, this.alvo.position);
-            if (distancia <= this.distanciaMaximaAtaque)
+            if (!this.atacando && this.tempoEsperaProximoAtaque <= 0)
             {
-                if (!this.atacando)
-                {
-                    this.tempoEsperaProximoAtaque -= Time.deltaTime;
-                    if (this.tempoEsperaProximoAtaque <= 0)
-                    {
-                        this.tempoEsperaProximoAtaque = this.intervaloEntreAtaques;
-                        IniciarAtaque();
-                    }
-                }
-            }
-            else
-            {
-                // Se estiver fora da distância de ataque, retorne para o estado "Andando"
-                this.atacando = false;
+                this.tempoEsperaProximoAtaque = this.intervaloEntreAtaques;
+                IniciarAtaque();
             }
         }
+        else
+        {
+            // Se estiver fora da distância de ataque, retorne para o estado "Andando"
+            this.atacando = false;
+        }
+    } 
     }
 
     private void IniciarAtaque()
     {
-        this.atacando = true;
-    }
+    this.atacando = true;
+    // Adicione aqui qualquer lógica específica do início do ataque, como iniciar a animação de ataque.
+        }
 
     private void Atacar()
     {
+        // Adicione aqui a lógica de ataque, como causar dano ao jogador.
         MiroHp miroHp = alvo.GetComponent<MiroHp>();
-        miroHp.TakeDamage(0);
+        if (miroHp != null)
+        {
+            miroHp.TakeDamage(1);
+        }
 
         // Reinicia o booleano para false após o ataque
         this.atacando = false;

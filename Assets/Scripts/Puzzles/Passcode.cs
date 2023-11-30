@@ -20,6 +20,15 @@ public class Passcode : MonoBehaviour
     public LevelLoader levelLoader;
     public string SceneName;
 
+
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
+
     public void CodeFunction(string Numbers)
     {
         NrIndex++;
@@ -31,7 +40,7 @@ public class Passcode : MonoBehaviour
     {
         if(Nr == Code)
         {
-            
+            audioManager.PlaySFX(audioManager.puzzle);
             levelLoader.Transition(SceneName);
         }
     }

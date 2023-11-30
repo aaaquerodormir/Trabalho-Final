@@ -12,6 +12,8 @@ public class TouchControl : MonoBehaviour
 
     public static bool youWin;
 
+    
+
     void Start()
     {
         winText.SetActive(false);
@@ -37,8 +39,11 @@ public class TouchControl : MonoBehaviour
             pictures[14].rotation.z == 0 &&
             pictures[15].rotation.z == 0)
         {
+        
             youWin = true;
             winText.SetActive(true);
         }
     }
+
+    
 }

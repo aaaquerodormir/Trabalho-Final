@@ -11,7 +11,7 @@ public class SiddingGame : MonoBehaviour
     [SerializeField] LayerMask OtherSide;
 
     private bool isMinigameOpen = false;
-    private bool isMouseOverMinigame = false;
+   // private bool isMouseOverMinigame = false;
 
     public bool playerIsClose;
 

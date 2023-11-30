@@ -54,7 +54,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Deserto--.unity
     guid: 5077bc9f292e01d46897795c4d05321b
   - enabled: 1
-    path: Assets/Scenes/Boss.unity
+    path: Assets/Scenes/Plataform.unity
     guid: 2b3177279fcc9d64fb839c9bfd1e9521
   - enabled: 1
     path: Assets/Scenes/Menu/CenaFinal.unity
