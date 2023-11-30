@@ -84,7 +84,7 @@ public class Miro : MonoBehaviour
         anim.SetFloat("Speed", movPlayer.magnitude);
         movPlayer.Normalize();
 
-        if(Input.GetKeyDown(KeyCode.LeftShift) && movPlayer != Vector2.zero && InDash == false)
+        if(Input.GetKeyDown(KeyCode.C) && movPlayer != Vector2.zero && InDash == false)
         {
             audioManager.PlaySFX(audioManager.dash);
             InDash = true;
@@ -143,13 +143,13 @@ public class Miro : MonoBehaviour
 
     private void ChangeTimeLevel()
     {
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             StartCoroutine(EsperarSegundos(1f));
             audioManager.PlaySFX(audioManager.viagem);
 
         }
-        if (Input.GetButtonDown("Fire3"))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             PlayerPrefs.DeleteAll();
         }
@@ -211,7 +211,7 @@ public class Miro : MonoBehaviour
 
     void OnAttack()
     {
-        if(Input.GetKeyDown(KeyCode.CapsLock))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             audioManager.PlaySFX(audioManager.ataque);
             _isAttack = true;
@@ -233,7 +233,7 @@ public class Miro : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyUp(KeyCode.CapsLock))
+        if(Input.GetKeyUp(KeyCode.Space))
         {
             _isAttack = false;
             speed = 2;

@@ -335,6 +335,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 458747722}
     m_Modifications:
+    - target: {fileID: 1440496887099167900, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2439287505822917011, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
       propertyPath: m_Name
       value: Palmeira (5)
@@ -1325,6 +1329,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 458747722}
     m_Modifications:
+    - target: {fileID: 1440496887099167900, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2439287505822917011, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
       propertyPath: m_Name
       value: Palmeira (2)
@@ -1726,7 +1734,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -2769,6 +2777,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 458747722}
     m_Modifications:
+    - target: {fileID: 1440496887099167900, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2439287505822917011, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
       propertyPath: m_Name
       value: Palmeira (7)
@@ -3124,6 +3136,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 458747722}
     m_Modifications:
+    - target: {fileID: 1440496887099167900, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2439287505822917011, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
       propertyPath: m_Name
       value: Palmeira (8)
@@ -3209,7 +3225,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.86274517, g: 0.5803922, b: 0.3529412, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3273,6 +3289,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 458747722}
     m_Modifications:
+    - target: {fileID: 1440496887099167900, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2439287505822917011, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
       propertyPath: m_Name
       value: Palmeira (10)
@@ -3330,6 +3350,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 458747722}
     m_Modifications:
+    - target: {fileID: 1440496887099167900, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2439287505822917011, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
       propertyPath: m_Name
       value: Palmeira (6)
@@ -4527,6 +4551,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 458747722}
     m_Modifications:
+    - target: {fileID: 1440496887099167900, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2439287505822917011, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
       propertyPath: m_Name
       value: Palmeira (9)
@@ -4646,6 +4674,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 458747722}
     m_Modifications:
+    - target: {fileID: 1440496887099167900, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2439287505822917011, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
       propertyPath: m_Name
       value: Palmeira (1)
@@ -5234,6 +5266,63 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1997645497}
   m_SourcePrefab: {fileID: 100100000, guid: f09f705514bd5154b88344ccd2f380ed, type: 3}
+--- !u!1001 &1275152858
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3213367062526819860, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213367062526819860, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213367062526819860, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.080686
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213367062526819860, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213367062526819860, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213367062526819860, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213367062526819860, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213367062526819860, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213367062526819860, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213367062526819860, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868410126095469877, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a383a92d306558a4e82d5b3ff3c5c81d, type: 3}
 --- !u!1001 &1277130906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5309,6 +5398,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 458747722}
     m_Modifications:
+    - target: {fileID: 1440496887099167900, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2439287505822917011, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
       propertyPath: m_Name
       value: Palmeira (4)
@@ -11007,6 +11100,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2384355584294038643, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2384355584294038643, guid: fc5eb8e0f430ce549b095762116a2e93, type: 3}
       propertyPath: PanelGameOver
       value: 
       objectReference: {fileID: 1711780682}
@@ -11071,13 +11168,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 458747722}
     m_Modifications:
+    - target: {fileID: 1440496887099167900, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 2439287505822917011, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
       propertyPath: m_Name
       value: Palmeira (3)
       objectReference: {fileID: 0}
     - target: {fileID: 4630099337306588563, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.756
+      value: -2.85
       objectReference: {fileID: 0}
     - target: {fileID: 4630099337306588563, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13061,6 +13162,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1598735461, guid: c347d80b905ecac4c979ae58dc194aba, type: 3}
     - target: {fileID: 2809586674855720201, guid: d2d83ab608d92424ba321a531fb78f68, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2809586674855720201, guid: d2d83ab608d92424ba321a531fb78f68, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
@@ -13674,6 +13779,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 458747722}
     m_Modifications:
+    - target: {fileID: 1440496887099167900, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2439287505822917011, guid: e9053b356cefbe749aeac0ae8f99954c, type: 3}
       propertyPath: m_Name
       value: Palmeira
@@ -13853,3 +13962,4 @@ SceneRoots:
   - {fileID: 1218584851}
   - {fileID: 159291407}
   - {fileID: 1454088162}
+  - {fileID: 1275152858}

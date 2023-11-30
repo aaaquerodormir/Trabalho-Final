@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2804044967886050994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1493357628462670291}
+  m_Layer: 0
+  m_Name: BulletParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1493357628462670291
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2804044967886050994}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.494, y: -0.5099993, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4316739118998175179}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6518257390774250474
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,6 +43,8 @@ GameObject:
   - component: {fileID: 8785578673792022317}
   - component: {fileID: 510860859862782322}
   - component: {fileID: 5593436269128602023}
+  - component: {fileID: 4531670799269781437}
+  - component: {fileID: 6547266816584916810}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -31,7 +64,8 @@ Transform:
   m_LocalPosition: {x: 0.5714972, y: -2.3766491, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1493357628462670291}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8785578673792022317
@@ -75,7 +109,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 2019050789, guid: eb02042182c341342af5296c34b3aada, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,8 +132,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1050c109909cb63469353f9ed5f7dc69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 40
-  bossAnimator: {fileID: 0}
+  maxHealth: 80
+  healthBar: {fileID: 0}
+  bossAnimator: {fileID: 6547266816584916810}
+  healAnimator: {fileID: 6547266816584916810}
+  itemToDrop: {fileID: 8742392345643738828, guid: 2e20a224876dc9547ae859eade011a29, type: 3}
 --- !u!50 &5593436269128602023
 Rigidbody2D:
   serializedVersion: 4
@@ -127,3 +164,42 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &4531670799269781437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6518257390774250474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c15b7550bd8023b419a199307dc2e3be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanciaDoTiro: 4.3
+  fireRate: 1
+  bullet: {fileID: 7106782229104072231, guid: 81c06c5d67107c047a5ee1ba7a3acf6f, type: 3}
+  bulletParent: {fileID: 2804044967886050994}
+  animator: {fileID: 6547266816584916810}
+  tempoParaAnimacao: 3
+--- !u!95 &6547266816584916810
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6518257390774250474}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d10f799d68644854fa551d832eaca5a1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

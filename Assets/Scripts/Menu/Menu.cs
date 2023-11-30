@@ -24,7 +24,11 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
-    
+
+    public void Creditos()
+    {
+        SceneManager.LoadScene("Creditos");
+    }
     public void PlayGame()
     {
         MyLoading.LoadLevel("Floresta");

@@ -26,8 +26,17 @@ public class InimigoSeguePlayer : MonoBehaviour
     public int damage;
     private bool isDead = false;
     private Animator animator;
-    void Start()
+
+    AudioManager audioManager;
+
+    private void Awake()
     {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
+        void Start()
+    {
+        audioManager.PlaySFX(audioManager.tristezaid);
         player = GameObject.FindGameObjectWithTag("Player").transform;
         healthBarScale = healthBar.localScale;
         healthPercent = healthBarScale.x / health;
@@ -49,11 +58,14 @@ public class InimigoSeguePlayer : MonoBehaviour
 
         if (distanceFromPlayer < campoDeVisao && distanceFromPlayer > distanciaTiro)
         {
+           
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed * Time.deltaTime);
             
         }
         else if (distanceFromPlayer <= distanciaTiro && nextFireTime < Time.time)
         {
+            audioManager.PlaySFX(audioManager.tristezaatk);
+
             // Use a posição do inimigo como ponto de origem para a bala
             Instantiate(bullet, transform.position, Quaternion.identity);
 

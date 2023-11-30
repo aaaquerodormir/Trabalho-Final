@@ -6,9 +6,9 @@ public class Miro_Cam : MonoBehaviour
 {
     // Start is called before the first frame update
     private bool insideMaze = false;
-
     private void OnTriggerEnter2D(Collider2D other)
     {
+        
         if (other.CompareTag("Maze"))
         {
             insideMaze = true;
@@ -17,9 +17,19 @@ public class Miro_Cam : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        
         if (other.CompareTag("Maze"))
         {
-            insideMaze = false;
+            if(other.CompareTag("CATK"))
+            {
+                insideMaze = true;
+
+            }
+            else 
+            {
+                insideMaze = false;
+            }
+            
         }
     }
 

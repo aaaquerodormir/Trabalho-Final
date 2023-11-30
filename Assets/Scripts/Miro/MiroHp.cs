@@ -39,8 +39,8 @@ public class MiroHp : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject, 10);
             _CanvasController.GameOver();
+            Destroy(gameObject, 10);
         }
     }
 }

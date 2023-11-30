@@ -87,7 +87,7 @@ public class SiddingGame : MonoBehaviour
          }
         */
 
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose/* && !teclaIPressionadaNoColisor*/)
+        if (Input.GetKeyDown(KeyCode.X) && playerIsClose/* && !teclaIPressionadaNoColisor*/)
         {
             if (!isMinigameOpen)
             {

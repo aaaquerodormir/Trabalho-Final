@@ -19,7 +19,9 @@ public class AudioManager : MonoBehaviour
     public AudioClip puzzle;
     public AudioClip dash;
     public AudioClip button;
-    
+    public AudioClip sache;
+    public AudioClip tristezaid;
+    public AudioClip tristezaatk;
 
 
     private void Start()
@@ -32,5 +34,27 @@ public class AudioManager : MonoBehaviour
     public void PlaySFX(AudioClip clip)
     {
         SFXSource.PlayOneShot(clip);
+    }
+
+    public void Pausar(AudioClip clip)
+    {
+        musicSource.Pause();
+    }
+
+    public void GO(AudioClip clip)
+    {
+        musicSource.Play();
+    }
+
+    public void ChangeMusic(float volume)
+    {
+        musicSource.volume = volume;    
+
+    }
+
+    public void ChangeSFX(float vol)
+    {
+        SFXSource.volume = vol;
+
     }
 }

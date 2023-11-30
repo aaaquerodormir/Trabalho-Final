@@ -13,6 +13,12 @@ public class Camera_Controller : MonoBehaviour
 
     public Material novoMaterial;
     public Material Original;
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     private void Start()
     {
@@ -27,12 +33,14 @@ public class Camera_Controller : MonoBehaviour
 
             if (insideMaze)
             {
+                audioManager.Pausar(audioManager.background);
                 mainCamera.orthographicSize = insideMazeSize;
                 Cam.SetActive(true);
                 Miro.sprite.material = novoMaterial; // troque o material do miro para um diferente
             }
             else
             {
+               
                 Miro.sprite.material = Original;
                 Cam.SetActive(false);
                 mainCamera.orthographicSize = outsideMazeSize;

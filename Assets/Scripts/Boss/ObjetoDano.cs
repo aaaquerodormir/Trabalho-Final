@@ -63,7 +63,7 @@ public class ObjetoDano : MonoBehaviour
             BossLife bossLife = boss.GetComponent<BossLife>();
             if (bossLife != null)
             {
-                bossLife.TakeDamage(10); // Exemplo de causar 10 de dano ao boss
+                bossLife.TakeDamage(30); // Exemplo de causar 10 de dano ao boss
             }
             else
             {

@@ -10,13 +10,11 @@ public class Configuraçoes : MonoBehaviour
     //Variáveis
     public bool     isFullscreen;
     public int      resolutionIndex;
-    
     public float    musicVolume;
 
     //Objetos
     public Toggle fullScreenToggle;
     public Dropdown resolutionDropdown;
-   
     public Slider musicVolumeSlider;
 
     private List<Resolution> customResolutions = new List<Resolution>
@@ -47,7 +45,7 @@ public class Configuraçoes : MonoBehaviour
         // Chame as funções
         fullScreenToggle.onValueChanged.AddListener(delegate { OnFullScreenToggle(); });
         resolutionDropdown.onValueChanged.AddListener(delegate { OnResolutionChange(); });
-        musicVolumeSlider.onValueChanged.AddListener(delegate { OnMusicVolumeChange(); });
+               musicVolumeSlider.onValueChanged.AddListener(delegate { OnMusicVolumeChange(); });
     }
 
     // Restante do seu código...
@@ -63,8 +61,7 @@ public class Configuraçoes : MonoBehaviour
         Resolution selectedResolution = customResolutions[resolutionDropdown.value];
         Screen.SetResolution(selectedResolution.width, selectedResolution.height, fullScreenToggle.isOn);
     }
-
-    public void OnMusicVolumeChange()
+     public void OnMusicVolumeChange()
     {
 
     }

@@ -11,7 +11,7 @@ public class CameraShake : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             StartCoroutine(Shake());    
         }
